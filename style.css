@@ -2,6 +2,7 @@
 
 html {
     background-color: #E5E5E5;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -9,36 +10,225 @@ html {
 
 @media only screen and (max-width: 768px) {
 
-#body {
-    background-image: url('./images/image.png');
-    height: 80vh;
-    background-repeat: no-repeat;
-    background-color: white;
-    background-size: cover;
+*{
     margin: 0%;
-    border-bottom-left-radius: 100px;
 }
 
-#projects {
+header .nav-bar {
     background-color: white;
-    height: 65vh;
+    padding: 30px;
+}
+
+header .my-logo {
+    font-weight: 700;
+    color: #6070FF;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#body {
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-color: white;
+    border-bottom-left-radius: 100px;
+    background-size: cover;
+    background-image: url('./images/image.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    padding: 0 30px;
+}
+
+#body .title {
+    font-weight: 700;
+    font-size: 32px;
+    padding-bottom: 20px;
+}
+
+#body .text {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#body .button-c .letsconnect {
+    text-decoration: none;
+    color: #7F8CFF;
+    size: 16px;
+    line-height: 50px;
+}
+
+#body .icons {
+ column-gap: 50px;
+}
+
+#body .icons .icon {
+    width: 30px;
+    height: 30px;
+}
+
+
+#projects1 {
+    background-color: white;
+    height: 63vh;
     width: 400px;
     border-radius: 20px;
     border: 2px solid lightgray;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     padding: 20px 20px;
 }
 
-#projects .image img {
+#projects2 {
+    background-color: white;
+    height: 71vh;
+    width: 400px;
+    border-radius: 20px;
+    border: 2px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 20px;
+}
+
+#projects1 .image img {
 width: 400px;
-height: 300px;   
+height: 300px;  
+}
+
+#projects2 .image img {
+    width: 400px;
+    height: 300px;  
+    }
+
+#projects1 .project-title {
+    color: #172B4D;
+    font-size: 32px;
+}
+#projects2 .project-title {
+    color: #172B4D;
+    font-size: 32px;
+}
+
+#projects1 .subtitle {
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+#projects2 .subtitle {
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+#projects1 .project-text {
+    margin-bottom: 10px;
+}
+
+#projects2 .project-text {
+    margin-bottom: 10px;
 }
 
 
+#projects1 .subtitle .backend {
+    color: gray;
+}
 
+#projects2 .subtitle .backend {
+    color: gray;
+}
 
+#projects1 .subtitle .num {
+    color: gray;
+}
+
+#projects2 .subtitle .num {
+    color: gray;
+}
+
+#projects1 .subtitle .dot {
+    font-size: 15px;
+    color: gray;
+}
+
+#projects2 .subtitle .dot {
+    font-size: 15px;
+    color: gray;
+}
+
+#projects1 .project-text {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+#projects2 .project-text {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+#projects1 .lan-tags {
+    margin-bottom: 20px;
+}
+
+#projects2 .lan-tags {
+    margin-bottom: 20px;
+}
+
+#projects1 .lan-tags .tag-button {
+    display: inline-block;
+    background-color: #EBEBFF;
+    padding: 0.5em 2.5em;
+    color: #6070FF;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+#projects2 .lan-tags .tag-button {
+    display: inline-block;
+    background-color: #EBEBFF;
+    padding: 0.5em 2.5em;
+    color: #6070FF;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+#projects1 .pro-button .button {
+    text-decoration: none;
+    color: #6070FF;
+    border: 2px solid #6070FF;
+    padding: 0.8em 1em;
+    border-radius: 8px;
+}
+
+#projects2 .pro-button .button {
+    text-decoration: none;
+    color: #6070FF;
+    border: 2px solid #6070FF;
+    padding: 0.8em 1em;
+    border-radius: 8px;
+}
+
+#projects1 .pro-button .button:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #6070FF;
+    padding: 0.8em 1em;
+    border-radius: 8px;
+}
+
+#projects2 .pro-button .button:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #6070FF;
+    padding: 0.8em 1em;
+    border-radius: 8px;
+}
 
 
 
