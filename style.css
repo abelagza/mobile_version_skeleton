@@ -1,0 +1,45 @@
+
+
+html {
+    background-color: #E5E5E5;
+}
+
+
+/* Mobile version */
+
+@media only screen and (max-width: 768px) {
+
+#body {
+    background-image: url('./images/image.png');
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: cover;
+    margin: 0%;
+    border-bottom-left-radius: 100px;
+}
+
+#projects {
+    background-color: white;
+    height: 65vh;
+    width: 400px;
+    border-radius: 20px;
+    border: 2px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px 20px;
+}
+
+#projects .image img {
+width: 400px;
+height: 300px;   
+}
+
+
+
+
+
+
+
+}
