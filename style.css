@@ -5,7 +5,8 @@ html {
 
 /* Mobile version */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px)
+  and (min-device-width: 500px) {
   * {
     margin: 0%;
   }
@@ -15,7 +16,8 @@ html {
     padding: 30px;
     display: flex;
     justify-content: space-between;
-    margin: 0% auto;
+    margin: auto;
+    min-width: 400px;
   }
 
   header .my-logo {
@@ -74,7 +76,8 @@ html {
     flex-direction: column;
     justify-content: center;
     padding: 0 30px;
-    margin: 0% auto;
+    margin: auto;
+    min-width: 400px;
   }
 
   #body .title {
@@ -106,6 +109,7 @@ html {
     column-gap: 50px;
     list-style-type: none;
     padding: 0%;
+    margin-top: 20px;
   }
 
   #body .icons li {
@@ -447,10 +451,12 @@ html {
 
   header .nav-bar {
     background-color: white;
-    padding: 30px;
     display: flex;
     justify-content: space-between;
-    width: 375px;
+    padding: 20px 20px;
+    margin: 0% auto;
+    width: 400px;
+    border: 2px solid white;
   }
 
   header .my-logo {
@@ -499,7 +505,7 @@ html {
   }
 
   #body {
-    height: 80vh;
+    height: 85vh;
     background-repeat: no-repeat;
     background-color: white;
     border-bottom-left-radius: 100px;
@@ -508,9 +514,10 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 0 30px;
+    padding: 20px 20px;
     margin: 0% auto;
-    width: 375px;
+    width: 400px;
+    border: 2px solid white;
   }
 
   #body .title {
@@ -531,8 +538,12 @@ html {
     text-decoration: none;
     color: #7f8cff;
     font-size: 13px;
-    line-height: 40px;
+    line-height: 80px;
     font-weight: 500;
+  }
+
+  #body .button-c .letsconnect h2 {
+    font-weight: normal;
   }
 
   #body .icons {
