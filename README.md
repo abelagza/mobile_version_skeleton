@@ -22,19 +22,9 @@
   1. Access to a computer and Web Browser
 
 ### Setup
-  1. Use the following link to clone the repository on your computer:
+  1. Use the following link to clone the repository on your computer: https://github.com/abelagza/mobile_version_skeleton.git
 
   2. Run the HTML file using the web browser of choice.
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
 
 ## Authors
 

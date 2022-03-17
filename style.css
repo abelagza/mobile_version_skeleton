@@ -15,6 +15,7 @@ html {
     padding: 30px;
     display: flex;
     justify-content: space-between;
+    width: 100%;
   }
 
   header .my-logo {
@@ -73,6 +74,8 @@ html {
     flex-direction: column;
     justify-content: center;
     padding: 0 30px;
+    margin: 0% auto;
+    width: 100%;
   }
 
   #body .title {
@@ -89,12 +92,19 @@ html {
   #body .button-c .letsconnect {
     text-decoration: none;
     color: #7f8cff;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 50px;
+    font-weight: 500;
   }
 
   #body .icons {
     column-gap: 50px;
+    list-style-type: none;
+    padding: 0%;
+  }
+
+  #body .icons li {
+    display: inline;
   }
 
   #body .icons .icon {
@@ -113,7 +123,7 @@ html {
     flex-direction: column;
     justify-content: flex-start;
     padding: 20px 20px;
-    margin: 0% 5%;
+    margin: 0% auto;
   }
 
   #projects2 {
@@ -126,7 +136,7 @@ html {
     flex-direction: column;
     justify-content: flex-start;
     padding: 20px 20px;
-    margin: 0% 5%;
+    margin: 0% auto;
   }
 
   #projects1 .image img {
@@ -272,7 +282,7 @@ html {
   flex-direction: column;
   justify-content: flex-start;
   padding: 20px 20px;
-  margin: 0% 5%;
+  margin: 0% auto;
 }
 
 #projects4 {
@@ -285,7 +295,7 @@ html {
   flex-direction: column;
   justify-content: flex-start;
   padding: 20px 20px;
-  margin: 0% 5%;
+  margin: 0% auto;
 }
 
 #projects3 .image img {
