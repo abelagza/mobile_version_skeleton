@@ -1,56 +1,39 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Portfolio: setup and mobile version skeleton
 
-> Description the project.
-
+> This is the first CSS HTML project from the portfolio
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- CSS, HTML
+- GitHub
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://www.loom.com/share/b60f8e3825cb434e91d73f92ca3b67a9)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
+**To get a local copy up and running follow these simple example steps.**
 
 ### Prerequisites
+  1. Access to a computer and Web Browser
 
 ### Setup
+  1. Use the following link to clone the repository on your computer: https://github.com/abelagza/mobile_version_skeleton.git
 
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+  2. Run the HTML file using the web browser of choice.
 
 ## Authors
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@abelagza](https://github.com/abelagza)
+- Twitter: [@abelagza](https://twitter.com/abelagza)
+- LinkedIn: [abelagza](https://linkedin.com/in/abelagza)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
