@@ -94,9 +94,12 @@ html {
   #body .button-c .letsconnect {
     text-decoration: none;
     color: #7f8cff;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 50px;
-    font-weight: 500;
+  }
+
+  #body .button-c .letsconnect h2 {
+    font-weight: normal;
   }
 
   #body .icons {
