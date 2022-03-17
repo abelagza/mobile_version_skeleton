@@ -3,7 +3,6 @@ html {
   font-family: 'Poppins', sans-serif;
 }
 
-
 /* Mobile version */
 
 @media only screen and (max-width: 768px) {
@@ -419,5 +418,4 @@ html {
   background-color: #6070ff;
   padding: 0.8em 1em;
   border-radius: 8px;
-}
 }
