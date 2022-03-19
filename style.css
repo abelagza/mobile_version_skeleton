@@ -16,7 +16,6 @@ header .nav-bar {
   width: 375px;
   height: 48px;
   align-items: center;
-  margin-right: 0px;
 }
 
 header .my-logo {
@@ -146,7 +145,7 @@ header .nav-bar .button-b .burger-button {
 /* Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 */
 #projects {
   display: grid;
-  grid-template-columns: 5% 90% 5%;
+  grid-template-columns: 12% 1fr 12%;
   row-gap: 88px;
 }
 
@@ -594,10 +593,11 @@ header .nav-bar .button-b .burger-button {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   padding: 20px 20px;
   margin: 0% auto;
   width: 375px;
-  border: 2px solid white;
+  border: 4px solid white;
   padding-top: 35%;
 }
 
@@ -876,20 +876,23 @@ header .nav-bar .button-b .burger-button {
   height: 20px;
 }
 
-
-
 #contact {
   height: 1000px;
   background-color: #6070ff;
   border-top-left-radius: 120px;
   padding: 20px 20px;
   margin: 0% auto;
-  width: 370px;
+  width: 375px;
   background-image: url(./images/background-contact.png);
   background-size: contain;
   text-align: center;
   color: white;
-  border: 2px solid #6070ff;
+  border: 4px solid #6070ff;
+  margin-top: -100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #contact .contact-a {
@@ -897,7 +900,7 @@ header .nav-bar .button-b .burger-button {
 }
 
 #contact .contact-a h1 {
-  font-size: 40px;
+  font-size: 45px;
 }
 
 #contact .contact-a p {
