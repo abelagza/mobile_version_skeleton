@@ -601,37 +601,46 @@ header .nav-bar .button-b .burger-button {
   padding-top: 35%;
 }
 
-
+#about .about-a {
+  width: 327px;
+  height: 409px;
+  margin-bottom: 24px;
+}
 
 #about .about-a .title {
   font-weight: 700;
-  font-size: 40px;
-  padding-bottom: 20px;
+  font-size: 30px;
   color: #172b4d;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  line-height: 60px;
+  line-height: 52px;
   width: 327px;
   height: 101px;
+  margin-bottom: 12px;
 }
 
 #about .about-a .text {
   font-size: 16px;
-  line-height: 19px;
+  line-height: 24px;
   color: #172b4d;
   width: 327px;
   height: 144px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
 }
 
 #about .button-c {
   width: 327px;
   height: 40px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
 }
 
 #about .button-c .letsconnect {
   text-decoration: none;
   color: #7f8cff;
-  font-size: 16px;
-  line-height: 80px;
+  font-size: 11px;
   font-weight: 500;
 }
 
@@ -640,11 +649,15 @@ header .nav-bar .button-b .burger-button {
 }
 
 #about .icons {
-  column-gap: 50px;
   list-style-type: none;
   padding: 0%;
   width: 327px;
   height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 12px;
 }
 
 #about .icons li {
@@ -666,14 +679,18 @@ header .nav-bar .button-b .burger-button {
   text-decoration: none;
   color: #6070ff;
   border: 1px solid #6070ff;
-  padding: 0.5em 0.8em;
   border-radius: 8px;
   font-size: 17px;
+  width: 162px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #about .about-b {
   width: 327px;
-  height: 454.15px;
+  height: 464.15px;
   padding: 15px;
   display: flex;
   justify-content: space-between;
@@ -691,8 +708,10 @@ header .nav-bar .button-b .burger-button {
 #about .about-b .languages {
   width: 327px;
   height: 320px;
-  font-size: 20px;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
 }
 
 #about .about-b .languages li {
@@ -709,9 +728,33 @@ header .nav-bar .button-b .burger-button {
   line-height: 80px;
 }
 
+#about .about-b .languages .languages-button .languages-t{
+  width: 250px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+}
+
+#about .about-b .languages .languages-button .arrow {
+  width: 77px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about .about-b .languages .languages-button .arrowimg {
+  width: 20px;
+  height: 20px;
+}
+
+#about .about-b .languages .lan-button .text {
+  font-size: 18px;
+}
+
 #about .about-b .languages .icon {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
 }
 
 #about .about-b .languages .js {
@@ -723,15 +766,14 @@ header .nav-bar .button-b .burger-button {
 }
 
 #about .about-b .languages .javascript {
-  position: absolute;
   width: 300px;
-  height: 60px;
+  height: 67px;
   list-style-type: none;
 }
 
 #about .about-b .languages .text {
   width: 220px;
-  height: 60px;
+  height: 67px;
   float: right;
   display: flex;
   align-items: center;
@@ -739,7 +781,7 @@ header .nav-bar .button-b .burger-button {
 
 #about .about-b .languages .image {
   width: 80px;
-  height: 60px;
+  height: 67px;
   float: left;
   display: flex;
   justify-content: center;
@@ -765,14 +807,42 @@ header .nav-bar .button-b .burger-button {
   list-style-type: none;
 }
 
+#about .about-b .languages .languages-button {
+  width: 327px;
+  height: 72px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
 #about .about-b .frameworks .frameworks-button {
   width: 327px;
   height: 72px;
   border-bottom: 1px solid #dfe1e6;
   font-size: 20px;
-  display: table-cell;
-  vertical-align: middle;
-  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+}
+
+#about .about-b .frameworks .frameworks-button .frameworks-t {
+  width: 250px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+}
+
+#about .about-b .frameworks .frameworks-button .arrow {
+  width: 77px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about .about-b .frameworks .frameworks-button .arrowimg {
+  width: 20px;
+  height: 20px;
 }
 
 #about .about-b .skills .skills-button {
@@ -780,10 +850,33 @@ header .nav-bar .button-b .burger-button {
   height: 72px;
   border-bottom: 1px solid #dfe1e6;
   font-size: 20px;
-  display: table-cell;
-  vertical-align: middle;
-  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
 }
+
+
+#about .about-b .skills .skills-button .skills-t {
+  width: 250px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+}
+
+#about .about-b .skills .skills-button .arrow {
+  width: 77px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about .about-b .skills .skills-button .arrowimg {
+  width: 20px;
+  height: 20px;
+}
+
+
 
 #contact {
   height: 1000px;
