@@ -3,28 +3,28 @@ html {
   font-family: 'Poppins', sans-serif;
 }
 
+/* Mobile version */
+
 @media only screen and (max-width: 768px)
   and (min-device-width: 500px) {
   * {
     margin: 0%;
-    text-decoration: none;
   }
 
   header .nav-bar {
     background-color: white;
+    padding: 30px;
     display: flex;
     justify-content: space-between;
-    padding: 20px 20px;
-    margin: 0% auto;
-    width: 414px;
-    border: 2px solid white;
+    margin: auto;
+    min-width: 400px;
   }
 
   header .my-logo {
     font-weight: 700;
     color: #6070ff;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 20px;
   }
 
   header .nav-bar .button-b {
@@ -32,14 +32,14 @@ html {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
   }
 
   header .nav-bar .button-b .burger-button {
-    width: 25px;
+    width: 30px;
     height: 3px;
     background: #6070ff;
     border-radius: 5px;
@@ -50,7 +50,7 @@ html {
   .burger-button::after {
     content: '';
     position: absolute;
-    width: 25px;
+    width: 30px;
     height: 3px;
     border-radius: 5px;
     background: #6070ff;
@@ -66,7 +66,7 @@ html {
   }
 
   #body {
-    height: 604px;
+    height: 100vh;
     background-repeat: no-repeat;
     background-color: white;
     border-bottom-left-radius: 100px;
@@ -74,34 +74,31 @@ html {
     background-image: url('./images/image.png');
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    padding: 20px 20px;
-    margin: 0% auto;
-    width: 414px;
-    border: 2px solid white;
+    justify-content: center;
+    padding: 0 30px;
+    margin: auto;
+    min-width: 400px;
   }
 
   #body .title {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 32px;
     padding-bottom: 20px;
     color: #172b4d;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    line-height: 82px;
   }
 
   #body .text {
-    font-size: 11px;
-    line-height: 19px;
+    font-size: 16px;
+    line-height: 24px;
     color: #172b4d;
   }
 
   #body .button-c .letsconnect {
     text-decoration: none;
     color: #7f8cff;
-    font-size: 13px;
-    line-height: 80px;
-    font-weight: 500;
+    font-size: 15px;
+    line-height: 50px;
   }
 
   #body .button-c .letsconnect h2 {
@@ -112,6 +109,7 @@ html {
     column-gap: 50px;
     list-style-type: none;
     padding: 0%;
+    margin-top: 20px;
   }
 
   #body .icons li {
@@ -119,48 +117,45 @@ html {
   }
 
   #body .icons .icon {
-    width: 25px;
-    height: 25px;
-    margin-right: 6px;
-  }
-
-  /* Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 */
-
-  #projects {
-    display: grid;
-    grid-template-columns: 5% 90% 5%;
-    row-gap: 88px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
   }
 
   #projects1 {
-    grid-column-start: 2;
-    grid-column-end: 3;
     background-color: white;
-    height: 552px;
-    width: 327px;
-    border-radius: 16px;
+    height: 90vh;
+    width: 400px;
+    border-radius: 20px;
     border: 2px solid lightgray;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 16px;
+    padding: 20px 20px;
     margin: 0% auto;
   }
 
-  .pro1a {
-    height: 200px;
-    width: 327px;
-    margin: 12px 0;
-    background-image: url(./images/projects1.png);
-    background-size: 327px 200px;
-    background-repeat: no-repeat;
-    border-radius: 8px;
+  #projects2 {
+    background-color: white;
+    height: 95vh;
+    width: 400px;
+    border-radius: 20px;
+    border: 2px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 20px;
+    margin: 0% auto;
   }
 
-  .pro1b {
-    height: 327px;
-    width: 327px;
-    margin-top: 10%;
+  #projects1 .image img {
+    width: 400px;
+    height: 300px;
+  }
+
+  #projects2 .image img {
+    width: 400px;
+    height: 250px;
   }
 
   #projects1 .project-title {
@@ -168,7 +163,18 @@ html {
     font-size: 32px;
   }
 
+  #projects2 .project-title {
+    color: #172b4d;
+    font-size: 32px;
+  }
+
   #projects1 .subtitle {
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  #projects2 .subtitle {
     font-weight: bold;
     font-size: 13px;
     margin-bottom: 10px;
@@ -180,22 +186,64 @@ html {
     line-height: 24px;
   }
 
+  #projects2 .project-text {
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  #projects1 .subtitle .backend {
+    color: gray;
+  }
+
+  #projects2 .subtitle .backend {
+    color: gray;
+  }
+
+  #projects1 .subtitle .num {
+    color: gray;
+  }
+
+  #projects2 .subtitle .num {
+    color: gray;
+  }
+
   #projects1 .subtitle .dot {
-    font-size: 13px;
-    color: #7a869a;
+    font-size: 15px;
+    color: gray;
+  }
+
+  #projects2 .subtitle .dot {
+    font-size: 15px;
+    color: gray;
   }
 
   #projects1 .lan-tags {
     margin-bottom: 20px;
   }
 
+  #projects2 .lan-tags {
+    margin-bottom: 20px;
+  }
+
   #projects1 .lan-tags .tag-button {
     display: inline-block;
     background-color: #ebebff;
-    padding: 4px 12px;
+    padding: 0.5em 2.5em;
     color: #6070ff;
     border-radius: 8px;
-    font-size: 12px;
+    font-size: 13px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+  }
+
+  #projects2 .lan-tags .tag-button {
+    display: inline-block;
+    background-color: #ebebff;
+    padding: 0.5em 2.5em;
+    color: #6070ff;
+    border-radius: 8px;
+    font-size: 13px;
     margin-right: 5px;
     margin-bottom: 20px;
   }
@@ -203,561 +251,196 @@ html {
   #projects1 .pro-button .button {
     text-decoration: none;
     color: #6070ff;
-    border: 1px solid #6070ff;
-    padding: 0.5em 0.8em;
+    border: 2px solid #6070ff;
+    padding: 0.8em 1em;
     border-radius: 8px;
-    font-size: 17px;
-  }
-
-  /* Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 */
-  #projects2 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    background-color: white;
-    height: 596px;
-    width: 327px;
-    border-radius: 16px;
-    border: 2px solid lightgray;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 16px;
-    margin: 0% auto;
-  }
-
-  .pro2a {
-    height: 200px;
-    width: 327px;
-    margin: 12px 0;
-    background-image: url(./images/projects2.png);
-    background-size: 327px 200px;
-    background-repeat: no-repeat;
-    border-radius: 8px;
-  }
-
-  .pro2b {
-    height: 327px;
-    width: 327px;
-  }
-
-  #projects2 .project-title {
-    color: #172b4d;
-    font-size: 32px;
-  }
-
-  #projects2 .subtitle {
-    font-weight: bold;
-    font-size: 13px;
-    margin-bottom: 10px;
-  }
-
-  #projects2 .project-text {
-    margin-bottom: 10px;
-    font-size: 15px;
-    line-height: 24px;
-  }
-
-  #projects2 .subtitle .dot {
-    font-size: 13px;
-    color: #7a869a;
-  }
-
-  #projects2 .lan-tags {
-    margin-bottom: 20px;
-  }
-
-  #projects2 .lan-tags .tag-button {
-    display: inline-block;
-    background-color: #ebebff;
-    padding: 4px 12px;
-    color: #6070ff;
-    border-radius: 8px;
-    font-size: 12px;
-    margin-right: 5px;
-    margin-bottom: 20px;
   }
 
   #projects2 .pro-button .button {
     text-decoration: none;
     color: #6070ff;
-    border: 1px solid #6070ff;
-    padding: 0.5em 0.8em;
-    border-radius: 8px;
-    font-size: 17px;
-  }
-
-  /* Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 */
-  #projects3 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    background-color: white;
-    height: 552px;
-    width: 327px;
-    border-radius: 16px;
-    border: 2px solid lightgray;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 16px;
-    margin: 0% auto;
-  }
-
-  .pro3a {
-    height: 200px;
-    width: 327px;
-    margin: 12px 0;
-    background-image: url(./images/projects3.png);
-    background-size: 327px 200px;
-    background-repeat: no-repeat;
-    border-radius: 8px;
-  }
-
-  .pro3b {
-    height: 327px;
-    width: 327px;
-    margin-top: 10%;
-  }
-
-  #projects3 .project-title {
-    color: #172b4d;
-    font-size: 32px;
-  }
-
-  #projects3 .subtitle {
-    font-weight: bold;
-    font-size: 13px;
-    margin-bottom: 10px;
-  }
-
-  #projects3 .project-text {
-    margin-bottom: 10px;
-    font-size: 15px;
-    line-height: 24px;
-  }
-
-  #projects3 .subtitle .dot {
-    font-size: 13px;
-    color: #7a869a;
-  }
-
-  #projects3 .lan-tags {
-    margin-bottom: 20px;
-  }
-
-  #projects3 .lan-tags .tag-button {
-    display: inline-block;
-    background-color: #ebebff;
-    padding: 4px 12px;
-    color: #6070ff;
-    border-radius: 8px;
-    font-size: 12px;
-    margin-right: 5px;
-    margin-bottom: 20px;
-  }
-
-  #projects3 .pro-button .button {
-    text-decoration: none;
-    color: #6070ff;
-    border: 1px solid #6070ff;
-    padding: 0.5em 0.8em;
-    border-radius: 8px;
-    font-size: 17px;
-  }
-
-  /* Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 */
-  #projects4 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    background-color: white;
-    height: 596px;
-    width: 327px;
-    border-radius: 16px;
-    border: 2px solid lightgray;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 16px;
-    margin: 0% auto;
-  }
-
-  #projects .pro4a {
-    height: 200px;
-    width: 327px;
-    margin: 12px 0;
-    background-image: url(./images/projects4.png);
-    background-size: 327px 200px;
-    background-repeat: no-repeat;
-    border-radius: 8px;
-  }
-
-  #projects .pro4b {
-    height: 327px;
-    width: 327px;
-  }
-
-  #projects4 .project-title {
-    color: #172b4d;
-    font-size: 32px;
-  }
-
-  #projects4 .subtitle {
-    font-weight: bold;
-    font-size: 13px;
-    margin-bottom: 10px;
-  }
-
-  #projects4 .project-text {
-    margin-bottom: 10px;
-    font-size: 15px;
-    line-height: 24px;
-  }
-
-  #projects4 .subtitle .dot {
-    font-size: 13px;
-    color: #7a869a;
-  }
-
-  #projects4 .lan-tags {
-    margin-bottom: 20px;
-  }
-
-  #projects4 .lan-tags .tag-button {
-    display: inline-block;
-    background-color: #ebebff;
-    padding: 4px 12px;
-    color: #6070ff;
-    border-radius: 8px;
-    font-size: 12px;
-    margin-right: 5px;
-    margin-bottom: 20px;
-  }
-
-  #projects4 .pro-button .button {
-    text-decoration: none;
-    color: #6070ff;
-    border: 1px solid #6070ff;
-    padding: 0.5em 0.8em;
-    border-radius: 8px;
-    font-size: 17px;
-  }
-
-  /* About section */
-  #about .about-a {
-    height: 409px;
-    width: 327px;
-  }
-
-  #about {
-    height: 1125px;
-    background-color: white;
-    border-top-right-radius: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 20px;
-    margin: 0% auto;
-    width: 414px;
-    border: 2px solid white;
-  }
-
-  #about .title {
-    font-weight: 700;
-    font-size: 40px;
-    padding-bottom: 20px;
-    color: #172b4d;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    line-height: 60px;
-  }
-
-  #about .text {
-    font-size: 16px;
-    line-height: 19px;
-    color: #172b4d;
-  }
-
-  #about .button-c .letsconnect {
-    text-decoration: none;
-    color: #7f8cff;
-    font-size: 16px;
-    line-height: 80px;
-    font-weight: 500;
-  }
-
-  #about .button-c .letsconnect h2 {
-    font-weight: normal;
-  }
-
-  #about .icons {
-    column-gap: 50px;
-    list-style-type: none;
-    padding: 0%;
-    margin-bottom: 10px;
-  }
-
-  #about .icons li {
-    display: inline;
-  }
-
-  #about .icons .icon {
-    width: 25px;
-    height: 25px;
-    margin-right: 6px;
-  }
-
-  #about .pro-button .button {
-    text-decoration: none;
-    color: #6070ff;
-    border: 1px solid #6070ff;
-    padding: 0.5em 0.8em;
-    border-radius: 8px;
-    font-size: 17px;
-  }
-
-  #about .about-b {
-    width: 327px;
-    height: 454.15px;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #about .about-b .frameworks,
-  .skills,
-  .languages,
-  .js {
-    list-style-type: none;
-  }
-
-  #about .about-b .languages {
-    width: 327px;
-    height: 320px;
-    font-size: 20px;
-    margin-bottom: 30px;
-  }
-
-  #about .about-b .languages .lan-button {
-    width: 327px;
-    height: 72px;
-    font-size: 20px;
-    display: table-cell;
-    vertical-align: middle;
-    padding: 0%;
-    line-height: 80px;
-  }
-
-  #about .about-b .languages .icon {
-    width: 40px;
-    height: 40px;
-  }
-
-  #about .about-b .languages .js {
-    width: 303px;
-    height: 67px;
-    background-color: #f7f7f9;
-    border-radius: 8px;
-    font-size: 15px;
-  }
-
-  #about .about-b .languages .javascript {
-    position: absolute;
-    width: 300px;
-    height: 60px;
-    list-style-type: none;
-  }
-
-  #about .about-b .languages .text {
-    width: 220px;
-    height: 60px;
-    float: right;
-    display: flex;
-    align-items: center;
-  }
-
-  #about .about-b .languages .image {
-    width: 80px;
-    height: 60px;
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #about .about-b .languages .html {
-    width: 303px;
-    height: 67px;
-    background-color: #f7f7f9;
-    border-radius: 8px;
-    margin: 5% 0%;
-    font-size: 15px;
-    list-style-type: none;
-  }
-
-  #about .about-b .languages .css {
-    width: 303px;
-    height: 67px;
-    background-color: #f7f7f9;
-    border-radius: 8px;
-    font-size: 15px;
-    list-style-type: none;
-  }
-
-  #about .about-b .frameworks .frameworks-button {
-    width: 327px;
-    height: 72px;
-    border-bottom: 1px solid #dfe1e6;
-    font-size: 20px;
-    display: table-cell;
-    vertical-align: middle;
-    padding-left: 10px;
-  }
-
-  #about .about-b .skills .skills-button {
-    width: 327px;
-    height: 72px;
-    border-bottom: 1px solid #dfe1e6;
-    font-size: 20px;
-    display: table-cell;
-    vertical-align: middle;
-    padding-left: 10px;
-  }
-
-  /* contact section */
-  #contact {
-    height: 1000px;
-    background-color: #6070ff;
-    border-top-left-radius: 120px;
-    padding: 20px 20px;
-    margin: 0% auto;
-    width: 414px;
-    background-image: url(./images/background-contact.png);
-    background-size: contain;
-    text-align: center;
-    color: white;
     border: 2px solid #6070ff;
-    margin-top: -150px;
-  }
-
-  #contact .contact-a {
-    margin-top: 150px;
-  }
-
-  #contact .contact-a h1 {
-    font-size: 40px;
-  }
-
-  #contact .contact-a p {
-    font-size: 20px;
-    line-height: 28px;
-  }
-
-  #contact .contact-b .name p {
-    padding: 15px;
-  }
-
-  #contact .contact-b .email p {
-    padding: 15px;
-  }
-
-  #contact .contact-b .text-area p {
-    padding: 15px;
-  }
-
-  #contact .contact-b {
-    width: 360px;
-    height: 400px;
-    margin-top: 50px;
-  }
-
-  #contact .contact-b .name {
-    width: 360px;
-    height: 48px;
-    background-color: white;
-    border: 1px solid #cfd8dc;
+    padding: 0.8em 1em;
     border-radius: 8px;
-    color: black;
-    display: flex;
-    justify-content: left;
-  }
-
-  #contact .contact-b .email {
-    width: 360px;
-    height: 48px;
-    background-color: white;
-    border: 1px solid #cfd8dc;
-    border-radius: 8px;
-    margin-top: 20px;
-    color: black;
-    font-size: 17px;
-    display: flex;
-    align-items: center;
-  }
-
-  #contact .contact-b .text-area {
-    width: 360px;
-    height: 170px;
-    background-color: white;
-    border: 1px solid #cfd8dc;
-    border-radius: 8px;
-    margin-top: 20px;
-    color: lightgray;
-    font-size: 17px;
-    display: flex;
-    justify-content: left;
-  }
-
-  #contact .contact-b .button {
-    width: 140px;
-    height: 48px;
-    background-color: white;
-    border-radius: 8px;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 17px;
-  }
-
-  /* HOvers */
-  #projects4 .pro-button .button:hover {
-    text-decoration: none;
-    color: white;
-    background-color: #6070ff;
-    padding: 0.5em 0.8em;
-    border-radius: 8px;
-    font-size: 17px;
-  }
-
-  #projects3 .pro-button .button:hover {
-    text-decoration: none;
-    color: white;
-    background-color: #6070ff;
-    padding: 0.5em 0.8em;
-    border-radius: 8px;
-    font-size: 17px;
-  }
-
-  #projects2 .pro-button .button:hover {
-    text-decoration: none;
-    color: white;
-    background-color: #6070ff;
-    padding: 0.5em 0.8em;
-    border-radius: 8px;
-    font-size: 17px;
   }
 
   #projects1 .pro-button .button:hover {
     text-decoration: none;
     color: white;
     background-color: #6070ff;
-    padding: 0.5em 0.8em;
+    padding: 0.8em 1em;
     border-radius: 8px;
-    font-size: 17px;
+  }
+
+  #projects2 .pro-button .button:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #6070ff;
+    padding: 0.8em 1em;
+    border-radius: 8px;
   }
 }
 
-/* Phone Responsiveness Phone Responsiveness Phone Responsiveness Phone Responsiveness Phone Responsiveness */
+#projects3 {
+  background-color: white;
+  height: 90vh;
+  width: 400px;
+  border-radius: 20px;
+  border: 2px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px 20px;
+  margin: 0% auto;
+}
+
+#projects4 {
+  background-color: white;
+  height: 95vh;
+  width: 400px;
+  border-radius: 20px;
+  border: 2px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px 20px;
+  margin: 0% auto;
+}
+
+#projects3 .image img {
+  width: 400px;
+  height: 300px;
+}
+
+#projects4 .image img {
+  width: 400px;
+  height: 250px;
+}
+
+#projects3 .project-title {
+  color: #172b4d;
+  font-size: 32px;
+}
+
+#projects4 .project-title {
+  color: #172b4d;
+  font-size: 32px;
+}
+
+#projects3 .subtitle {
+  font-weight: bold;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+#projects4 .subtitle {
+  font-weight: bold;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+#projects3 .project-text {
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+#projects4 .project-text {
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+#projects3 .subtitle .backend {
+  color: gray;
+}
+
+#projects4 .subtitle .backend {
+  color: gray;
+}
+
+#projects3 .subtitle .num {
+  color: gray;
+}
+
+#projects4 .subtitle .num {
+  color: gray;
+}
+
+#projects3 .subtitle .dot {
+  font-size: 15px;
+  color: gray;
+}
+
+#projects4 .subtitle .dot {
+  font-size: 15px;
+  color: gray;
+}
+
+#projects3 .lan-tags {
+  margin-bottom: 20px;
+}
+
+#projects4 .lan-tags {
+  margin-bottom: 20px;
+}
+
+#projects3 .lan-tags .tag-button {
+  display: inline-block;
+  background-color: #ebebff;
+  padding: 0.5em 2.5em;
+  color: #6070ff;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+}
+
+#projects4 .lan-tags .tag-button {
+  display: inline-block;
+  background-color: #ebebff;
+  padding: 0.5em 2.5em;
+  color: #6070ff;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+}
+
+#projects3 .pro-button .button {
+  text-decoration: none;
+  color: #6070ff;
+  border: 2px solid #6070ff;
+  padding: 0.8em 1em;
+  border-radius: 8px;
+}
+
+#projects4 .pro-button .button {
+  text-decoration: none;
+  color: #6070ff;
+  border: 2px solid #6070ff;
+  padding: 0.8em 1em;
+  border-radius: 8px;
+}
+
+#projects3 .pro-button .button:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #6070ff;
+  padding: 0.8em 1em;
+  border-radius: 8px;
+}
+
+#projects4 .pro-button .button:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #6070ff;
+  padding: 0.8em 1em;
+  border-radius: 8px;
+}
+
+/* Phone Responsiveness */
+
 @media only screen
   and (min-device-width: 320px)
   and (max-device-width: 480px)
@@ -772,7 +455,7 @@ html {
     justify-content: space-between;
     padding: 20px 20px;
     margin: 0% auto;
-    width: 370px;
+    width: 400px;
     border: 2px solid white;
   }
 
@@ -822,7 +505,7 @@ html {
   }
 
   #body {
-    height: 604px;
+    height: 85vh;
     background-repeat: no-repeat;
     background-color: white;
     border-bottom-left-radius: 100px;
@@ -833,17 +516,16 @@ html {
     justify-content: flex-start;
     padding: 20px 20px;
     margin: 0% auto;
-    width: 370px;
+    width: 400px;
     border: 2px solid white;
   }
 
   #body .title {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 25px;
     padding-bottom: 20px;
     color: #172b4d;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    line-height: 82px;
   }
 
   #body .text {
@@ -880,68 +562,52 @@ html {
     margin-right: 6px;
   }
 
-  /* Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 */
-  #projects {
-    display: grid;
-    grid-template-columns: 5% 90% 5%;
-    row-gap: 88px;
-  }
-
-  #projects h1 {
-    color: transparent;
-  }
-
   #projects1 {
-    grid-column-start: 2;
-    grid-column-end: 3;
     background-color: white;
-    height: 552px;
-    width: 327px;
-    border-radius: 16px;
+    height: 85vh;
+    width: 400px;
+    border-radius: 20px;
     border: 2px solid lightgray;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 16px;
+    padding: 20px 20px;
     margin: 0% auto;
   }
 
-  .pro1a {
-    height: 200px;
-    width: 327px;
-    margin: 12px 0;
-    background-image: url(./images/projects1.png);
-    background-size: 327px 200px;
-    background-repeat: no-repeat;
-    border-radius: 8px;
-  }
-
-  .pro1b {
-    height: 327px;
-    width: 327px;
-    margin-top: 10%;
+  #projects1 .image img {
+    width: 400px;
+    height: 250px;
   }
 
   #projects1 .project-title {
     color: #172b4d;
-    font-size: 32px;
+    font-size: 28px;
   }
 
   #projects1 .subtitle {
     font-weight: bold;
-    font-size: 13px;
+    font-size: 12px;
     margin-bottom: 10px;
   }
 
   #projects1 .project-text {
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 24px;
   }
 
+  #projects1 .subtitle .backend {
+    color: gray;
+  }
+
+  #projects1 .subtitle .num {
+    color: gray;
+  }
+
   #projects1 .subtitle .dot {
-    font-size: 13px;
-    color: #7a869a;
+    font-size: 10px;
+    color: gray;
   }
 
   #projects1 .lan-tags {
@@ -951,7 +617,7 @@ html {
   #projects1 .lan-tags .tag-button {
     display: inline-block;
     background-color: #ebebff;
-    padding: 4px 12px;
+    padding: 0.5em 2.5em;
     color: #6070ff;
     border-radius: 8px;
     font-size: 12px;
@@ -962,63 +628,58 @@ html {
   #projects1 .pro-button .button {
     text-decoration: none;
     color: #6070ff;
-    border: 1px solid #6070ff;
-    padding: 0.5em 0.8em;
+    border: 2px solid #6070ff;
+    padding: 0.8em 1em;
     border-radius: 8px;
-    font-size: 17px;
+    font-size: 12px;
   }
 
-  /* Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 */
   #projects2 {
-    grid-column-start: 2;
-    grid-column-end: 3;
     background-color: white;
-    height: 596px;
-    width: 327px;
-    border-radius: 16px;
+    height: 95vh;
+    width: 400px;
+    border-radius: 20px;
     border: 2px solid lightgray;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 16px;
+    padding: 20px 20px;
     margin: 0% auto;
   }
 
-  .pro2a {
-    height: 200px;
-    width: 327px;
-    margin: 12px 0;
-    background-image: url(./images/projects2.png);
-    background-size: 327px 200px;
-    background-repeat: no-repeat;
-    border-radius: 8px;
-  }
-
-  .pro2b {
-    height: 327px;
-    width: 327px;
+  #projects2 .image img {
+    width: 400px;
+    height: 250px;
   }
 
   #projects2 .project-title {
     color: #172b4d;
-    font-size: 32px;
+    font-size: 28px;
   }
 
   #projects2 .subtitle {
     font-weight: bold;
-    font-size: 13px;
+    font-size: 12px;
     margin-bottom: 10px;
   }
 
   #projects2 .project-text {
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 24px;
   }
 
+  #projects2 .subtitle .backend {
+    color: gray;
+  }
+
+  #projects2 .subtitle .num {
+    color: gray;
+  }
+
   #projects2 .subtitle .dot {
-    font-size: 13px;
-    color: #7a869a;
+    font-size: 10px;
+    color: gray;
   }
 
   #projects2 .lan-tags {
@@ -1028,7 +689,7 @@ html {
   #projects2 .lan-tags .tag-button {
     display: inline-block;
     background-color: #ebebff;
-    padding: 4px 12px;
+    padding: 0.5em 2.5em;
     color: #6070ff;
     border-radius: 8px;
     font-size: 12px;
@@ -1039,64 +700,65 @@ html {
   #projects2 .pro-button .button {
     text-decoration: none;
     color: #6070ff;
-    border: 1px solid #6070ff;
-    padding: 0.5em 0.8em;
+    border: 2px solid #6070ff;
+    padding: 0.8em 1em;
     border-radius: 8px;
-    font-size: 17px;
+    font-size: 12px;
   }
 
-  /* Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 */
+  /* Projects 3 */
+
   #projects3 {
-    grid-column-start: 2;
-    grid-column-end: 3;
     background-color: white;
-    height: 552px;
-    width: 327px;
-    border-radius: 16px;
+    height: 85vh;
+    width: 400px;
+    border-radius: 20px;
     border: 2px solid lightgray;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 16px;
+    padding: 20px 20px;
     margin: 0% auto;
   }
 
-  .pro3a {
-    height: 200px;
-    width: 327px;
-    margin: 12px 0;
-    background-image: url(./images/projects3.png);
-    background-size: 327px 200px;
-    background-repeat: no-repeat;
-    border-radius: 8px;
+  #projects3 .image img {
+    width: 400px;
+    height: 250px;
   }
 
-  .pro3b {
-    height: 327px;
-    width: 327px;
-    margin-top: 10%;
+  #projects4 .image img {
+    width: 400px;
+    height: 250px;
   }
 
   #projects3 .project-title {
     color: #172b4d;
-    font-size: 32px;
+    font-size: 28px;
   }
 
   #projects3 .subtitle {
     font-weight: bold;
-    font-size: 13px;
+    font-size: 12px;
     margin-bottom: 10px;
   }
 
   #projects3 .project-text {
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 24px;
   }
 
+  #projects3 .subtitle .backend {
+    color: gray;
+  }
+
+  #projects3 .subtitle .num {
+    color: gray;
+  }
+
   #projects3 .subtitle .dot {
-    font-size: 13px;
-    color: #7a869a;
+    font-size: 10px;
+    color: gray;
   }
 
   #projects3 .lan-tags {
@@ -1106,7 +768,7 @@ html {
   #projects3 .lan-tags .tag-button {
     display: inline-block;
     background-color: #ebebff;
-    padding: 4px 12px;
+    padding: 0.5em 2.5em;
     color: #6070ff;
     border-radius: 8px;
     font-size: 12px;
@@ -1117,63 +779,55 @@ html {
   #projects3 .pro-button .button {
     text-decoration: none;
     color: #6070ff;
-    border: 1px solid #6070ff;
-    padding: 0.5em 0.8em;
+    border: 2px solid #6070ff;
+    padding: 0.8em 1em;
     border-radius: 8px;
-    font-size: 17px;
+    font-size: 12px;
   }
 
-  /* Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 */
+  /* Projects 4 */
+
   #projects4 {
-    grid-column-start: 2;
-    grid-column-end: 3;
     background-color: white;
-    height: 596px;
-    width: 327px;
-    border-radius: 16px;
+    height: 95vh;
+    width: 400px;
+    border-radius: 20px;
     border: 2px solid lightgray;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 16px;
+    padding: 20px 20px;
     margin: 0% auto;
-  }
-
-  .pro4a {
-    height: 200px;
-    width: 327px;
-    margin: 12px 0;
-    background-image: url(./images/projects4.png);
-    background-size: 327px 200px;
-    background-repeat: no-repeat;
-    border-radius: 8px;
-  }
-
-  .pro4b {
-    height: 327px;
-    width: 327px;
   }
 
   #projects4 .project-title {
     color: #172b4d;
-    font-size: 32px;
+    font-size: 28px;
   }
 
   #projects4 .subtitle {
     font-weight: bold;
-    font-size: 13px;
+    font-size: 12px;
     margin-bottom: 10px;
   }
 
   #projects4 .project-text {
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 24px;
   }
 
+  #projects4 .subtitle .backend {
+    color: gray;
+  }
+
+  #projects4 .subtitle .num {
+    color: gray;
+  }
+
   #projects4 .subtitle .dot {
-    font-size: 13px;
-    color: #7a869a;
+    font-size: 10px;
+    color: gray;
   }
 
   #projects4 .lan-tags {
@@ -1183,7 +837,7 @@ html {
   #projects4 .lan-tags .tag-button {
     display: inline-block;
     background-color: #ebebff;
-    padding: 4px 12px;
+    padding: 0.5em 2.5em;
     color: #6070ff;
     border-radius: 8px;
     font-size: 12px;
@@ -1194,341 +848,9 @@ html {
   #projects4 .pro-button .button {
     text-decoration: none;
     color: #6070ff;
-    border: 1px solid #6070ff;
-    padding: 0.5em 0.8em;
-    border-radius: 8px;
-    font-size: 17px;
-  }
-
-  #about .about-a {
-    height: 409px;
-    width: 327px;
-  }
-
-  #about {
-    height: 1125px;
-    background-color: white;
-    border-top-right-radius: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 20px 20px;
-    margin: 0% auto;
-    width: 370px;
-    border: 2px solid white;
-    padding-top: 35%;
-  }
-
-  #about .title {
-    font-weight: 700;
-    font-size: 40px;
-    padding-bottom: 20px;
-    color: #172b4d;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    line-height: 60px;
-  }
-
-  #about .text {
-    font-size: 16px;
-    line-height: 19px;
-    color: #172b4d;
-  }
-
-  #about .button-c .letsconnect {
-    text-decoration: none;
-    color: #7f8cff;
-    font-size: 16px;
-    line-height: 80px;
-    font-weight: 500;
-  }
-
-  #about .button-c .letsconnect h2 {
-    font-weight: normal;
-  }
-
-  #about .icons {
-    column-gap: 50px;
-    list-style-type: none;
-    padding: 0%;
-    margin-bottom: 10px;
-  }
-
-  #about .icons li {
-    display: inline;
-  }
-
-  #about .icons .icon {
-    width: 25px;
-    height: 25px;
-    margin-right: 6px;
-  }
-
-  #about .pro-button .button {
-    text-decoration: none;
-    color: #6070ff;
-    border: 1px solid #6070ff;
-    padding: 0.5em 0.8em;
-    border-radius: 8px;
-    font-size: 17px;
-  }
-
-  #about .about-b {
-    width: 327px;
-    height: 454.15px;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .about-b .frameworks,
-  .skills,
-  .languages,
-  .js {
-    list-style-type: none;
-  }
-
-  #about .about-b .languages {
-    width: 327px;
-    height: 320px;
-    font-size: 20px;
-    margin-bottom: 30px;
-  }
-
-  #about .about-b .languages li {
-    list-style-type: none;
-  }
-
-  #about .about-b .languages .lan-button {
-    width: 327px;
-    height: 72px;
-    font-size: 20px;
-    display: table-cell;
-    vertical-align: middle;
-    padding: 0%;
-    line-height: 80px;
-  }
-
-  #about .about-b .languages .icon {
-    width: 40px;
-    height: 40px;
-  }
-
-  #about .about-b .languages .js {
-    width: 303px;
-    height: 67px;
-    background-color: #f7f7f9;
-    border-radius: 8px;
-    font-size: 15px;
-  }
-
-  #about .about-b .languages .javascript {
-    position: absolute;
-    width: 300px;
-    height: 60px;
-    list-style-type: none;
-  }
-
-  #about .about-b .languages .text {
-    width: 220px;
-    height: 60px;
-    float: right;
-    display: flex;
-    align-items: center;
-  }
-
-  #about .about-b .languages .image {
-    width: 80px;
-    height: 60px;
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #about .about-b .languages .html {
-    width: 303px;
-    height: 67px;
-    background-color: #f7f7f9;
-    border-radius: 8px;
-    margin: 5% 0%;
-    font-size: 15px;
-    list-style-type: none;
-  }
-
-  #about .about-b .languages .css {
-    width: 303px;
-    height: 67px;
-    background-color: #f7f7f9;
-    border-radius: 8px;
-    font-size: 15px;
-    list-style-type: none;
-  }
-
-  #about .about-b .frameworks .frameworks-button {
-    width: 327px;
-    height: 72px;
-    border-bottom: 1px solid #dfe1e6;
-    font-size: 20px;
-    display: table-cell;
-    vertical-align: middle;
-    padding-left: 10px;
-  }
-
-  #about .about-b .skills .skills-button {
-    width: 327px;
-    height: 72px;
-    border-bottom: 1px solid #dfe1e6;
-    font-size: 20px;
-    display: table-cell;
-    vertical-align: middle;
-    padding-left: 10px;
-  }
-
-  #contact {
-    height: 1000px;
-    background-color: #6070ff;
-    border-top-left-radius: 120px;
-    padding: 20px 20px;
-    margin: 0% auto;
-    width: 370px;
-    background-image: url(./images/background-contact.png);
-    background-size: contain;
-    text-align: center;
-    color: white;
     border: 2px solid #6070ff;
-    margin-top: -150px;
-  }
-
-  #contact .contact-a {
-    margin-top: 150px;
-  }
-
-  #contact .contact-a h1 {
-    font-size: 40px;
-  }
-
-  #contact .contact-a p {
-    font-size: 20px;
-    line-height: 28px;
-  }
-
-  #contact .contact-b {
-    width: 360px;
-    height: 400px;
-    margin-top: 50px;
-  }
-
-  #contact .contact-b .name {
-    width: 360px;
-    height: 48px;
-    background-color: white;
-    border: 1px solid #cfd8dc;
+    padding: 0.8em 1em;
     border-radius: 8px;
-    color: black;
-    display: flex;
-    justify-content: left;
-  }
-
-  #contact .contact-b .email {
-    width: 360px;
-    height: 48px;
-    background-color: white;
-    border: 1px solid #cfd8dc;
-    border-radius: 8px;
-    margin-top: 20px;
-    color: black;
-    font-size: 17px;
-    display: flex;
-    align-items: center;
-  }
-
-  #contact .contact-b .text-area {
-    width: 360px;
-    height: 170px;
-    background-color: white;
-    border: 1px solid #cfd8dc;
-    border-radius: 8px;
-    margin-top: 20px;
-    color: lightgray;
-    font-size: 17px;
-    display: flex;
-    justify-content: left;
-  }
-
-  #contact .contact-b .text-area p {
-    padding: 15px;
-  }
-
-  #contact .contact-b .email p {
-    padding: 15px;
-  }
-
-  #contact .contact-b .name p {
-    padding: 15px;
-  }
-
-  #contact .contact-b .button {
-    width: 140px;
-    height: 48px;
-    background-color: white;
-    border-radius: 8px;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 17px;
-  }
-
-  .contact-b .button a {
-    text-decoration: none;
-    color: #6070ff;
-  }
-
-  /* hovers */
-  #projects1 .pro-button .button:hover {
-    text-decoration: none;
-    color: white;
-    background-color: #6070ff;
-    padding: 0.5em 0.8em;
-    border-radius: 8px;
-    font-size: 17px;
-  }
-
-  #projects4 .pro-button .button:hover {
-    text-decoration: none;
-    color: white;
-    background-color: #6070ff;
-    padding: 0.5em 0.8em;
-    border-radius: 8px;
-    font-size: 17px;
-  }
-
-  #projects3 .pro-button .button:hover {
-    text-decoration: none;
-    color: white;
-    background-color: #6070ff;
-    padding: 0.5em 0.8em;
-    border-radius: 8px;
-    font-size: 17px;
-  }
-
-  #about .pro-button .button:hover {
-    text-decoration: none;
-    color: white;
-    background-color: #6070ff;
-    padding: 0.5em 0.8em;
-    border-radius: 8px;
-    font-size: 17px;
-  }
-
-  #projects2 .pro-button .button:hover {
-    text-decoration: none;
-    color: white;
-    background-color: #6070ff;
-    padding: 0.5em 0.8em;
-    border-radius: 8px;
-    font-size: 17px;
+    font-size: 12px;
   }
 }
