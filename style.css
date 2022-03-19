@@ -285,6 +285,7 @@ html {
     border-radius: 8px;
     font-size: 17px;
   }
+
   /* Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 */
   #projects3 {
     grid-column-start: 2;
@@ -362,6 +363,7 @@ html {
     border-radius: 8px;
     font-size: 17px;
   }
+
   /* Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 */
   #projects4 {
     grid-column-start: 2;
@@ -755,7 +757,6 @@ html {
 }
 
 /* Phone Responsiveness Phone Responsiveness Phone Responsiveness Phone Responsiveness Phone Responsiveness */
-
 @media only screen
   and (min-device-width: 320px)
   and (max-device-width: 480px)
@@ -879,7 +880,6 @@ html {
   }
 
   /* Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 */
-
   #projects {
     display: grid;
     grid-template-columns: 5% 90% 5%;
@@ -966,6 +966,7 @@ html {
     border-radius: 8px;
     font-size: 17px;
   }
+
   /* Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 */
   #projects2 {
     grid-column-start: 2;
@@ -1042,6 +1043,7 @@ html {
     border-radius: 8px;
     font-size: 17px;
   }
+
   /* Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 */
   #projects3 {
     grid-column-start: 2;
@@ -1119,6 +1121,7 @@ html {
     border-radius: 8px;
     font-size: 17px;
   }
+  
   /* Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 */
   #projects4 {
     grid-column-start: 2;
@@ -1481,10 +1484,6 @@ html {
     text-decoration: none;
     color: #6070ff;
   }
-
-
-
-
 
   /* hovers */
   #projects1 .pro-button .button:hover {
