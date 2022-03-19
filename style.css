@@ -11,11 +11,12 @@ header .nav-bar {
   background-color: white;
   display: flex;
   justify-content: space-between;
-  padding: 20px 20px;
+  padding: 24px 24px;
   margin: 0% auto;
   width: 375px;
-  border: 2px solid white;
   height: 48px;
+  align-items: center;
+  margin-right: 0px;
 }
 
 header .my-logo {
@@ -72,11 +73,10 @@ header .nav-bar .button-b .burger-button {
   background-image: url('./images/image.png');
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding: 20px 20px;
+  justify-content: center;
+  padding: 24px 24px;
   margin: 0% auto;
   width: 375px;
-  border: 2px solid white;
 }
 
 #body .text-container {
@@ -88,12 +88,13 @@ header .nav-bar .button-b .burger-button {
 
 #body .title {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 30px;
   color: #172b4d;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  line-height: 50px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  line-height: 52px;
   width: 327px;
   height: 150px;
+  margin-bottom: 12px;
 }
 
 #body .text {
@@ -103,17 +104,19 @@ header .nav-bar .button-b .burger-button {
   width: 327px;
   height: 146px;
   line-height: 24px;
+  margin-bottom: 12px;
 }
 
 #body .button-c {
   width: 327px;
   height: 24px;
+  margin-bottom: 12px;
 }
 
 #body .button-c .letsconnect {
   text-decoration: none;
   color: #7f8cff;
-  font-size: 16px;
+  font-size: 11px;
   font-weight: 500;
   line-height: 24px;
 }
