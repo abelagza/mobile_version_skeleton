@@ -89,7 +89,7 @@ header .nav-bar .button-b .burger-button {
   font-weight: 700;
   font-size: 30px;
   color: #172b4d;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   line-height: 52px;
   width: 327px;
   height: 150px;
@@ -98,7 +98,6 @@ header .nav-bar .button-b .burger-button {
 
 #body .text {
   font-size: 16px;
-  line-height: 19px;
   color: #172b4d;
   width: 327px;
   height: 146px;
@@ -142,7 +141,6 @@ header .nav-bar .button-b .burger-button {
   margin-right: 6px;
 }
 
-/* Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 */
 #projects {
   display: grid;
   grid-template-columns: 12% 1fr 12%;
@@ -201,7 +199,6 @@ header .nav-bar .button-b .burger-button {
   align-items: center;
   width: 295px;
   height: 44px;
-  
 }
 
 #projects1 .pro1c {
@@ -241,11 +238,41 @@ header .nav-bar .button-b .burger-button {
   margin-right: 5px;
 }
 
+#about .pro-button {
+  width: 327px;
+  height: 48px;
+}
+
+#about .pro-button .button {
+  text-decoration: none;
+  color: #6070ff;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  font-size: 17px;
+  width: 162px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #projects1 .pro1c .pro-button {
   width: 295px;
   height: 72px;
   display: flex;
   align-items: center;
+}
+
+#contact .contact-b .button {
+  width: 140px;
+  height: 48px;
+  background-color: white;
+  border-radius: 8px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
 }
 
 #projects1 .pro1c .pro-button .button {
@@ -261,7 +288,6 @@ header .nav-bar .button-b .burger-button {
   align-items: center;
 }
 
-/* Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 */
 #projects2 {
   grid-column-start: 2;
   grid-column-end: 3;
@@ -307,7 +333,6 @@ header .nav-bar .button-b .burger-button {
   align-items: center;
   width: 295px;
   height: 44px;
-  
 }
 
 #projects2 .pro2c {
@@ -367,8 +392,6 @@ header .nav-bar .button-b .burger-button {
   align-items: center;
 }
 
-/* Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 */
-
 #projects3 {
   grid-column-start: 2;
   grid-column-end: 3;
@@ -417,7 +440,6 @@ header .nav-bar .button-b .burger-button {
   align-items: center;
   width: 295px;
   height: 44px;
-  
 }
 
 #projects3 .pro3c {
@@ -477,7 +499,6 @@ header .nav-bar .button-b .burger-button {
   align-items: center;
 }
 
-/* Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 */
 #projects4 {
   grid-column-start: 2;
   grid-column-end: 3;
@@ -524,7 +545,6 @@ header .nav-bar .button-b .burger-button {
   align-items: center;
   width: 295px;
   height: 44px;
-  
 }
 
 #projects4 .subtitle .dot {
@@ -670,24 +690,6 @@ header .nav-bar .button-b .burger-button {
   margin-right: 6px;
 }
 
-#about .pro-button {
-  width: 327px;
-  height: 48px;
-}
-
-#about .pro-button .button {
-  text-decoration: none;
-  color: #6070ff;
-  border: 1px solid #6070ff;
-  border-radius: 8px;
-  font-size: 17px;
-  width: 162px;
-  height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 #about .about-b {
   width: 327px;
   height: 464.15px;
@@ -728,11 +730,12 @@ header .nav-bar .button-b .burger-button {
   line-height: 80px;
 }
 
-#about .about-b .languages .languages-button .languages-t{
+#about .about-b .languages .languages-button .languages-t {
   width: 250px;
   height: 72px;
   display: flex;
   align-items: center;
+  font-size: 25px;
 }
 
 #about .about-b .languages .languages-button .arrow {
@@ -746,6 +749,14 @@ header .nav-bar .button-b .burger-button {
 #about .about-b .languages .languages-button .arrowimg {
   width: 20px;
   height: 20px;
+}
+
+#about .about-b .languages .text {
+  width: 220px;
+  height: 67px;
+  float: right;
+  display: flex;
+  align-items: center;
 }
 
 #about .about-b .languages .lan-button .text {
@@ -769,14 +780,6 @@ header .nav-bar .button-b .burger-button {
   width: 300px;
   height: 67px;
   list-style-type: none;
-}
-
-#about .about-b .languages .text {
-  width: 220px;
-  height: 67px;
-  float: right;
-  display: flex;
-  align-items: center;
 }
 
 #about .about-b .languages .image {
@@ -830,6 +833,7 @@ header .nav-bar .button-b .burger-button {
   height: 72px;
   display: flex;
   align-items: center;
+  font-size: 25px;
 }
 
 #about .about-b .frameworks .frameworks-button .arrow {
@@ -855,12 +859,12 @@ header .nav-bar .button-b .burger-button {
   margin-left: 12px;
 }
 
-
 #about .about-b .skills .skills-button .skills-t {
   width: 250px;
   height: 72px;
   display: flex;
   align-items: center;
+  font-size: 25px;
 }
 
 #about .about-b .skills .skills-button .arrow {
@@ -963,24 +967,11 @@ header .nav-bar .button-b .burger-button {
   padding: 15px;
 }
 
-#contact .contact-b .button {
-  width: 140px;
-  height: 48px;
-  background-color: white;
-  border-radius: 8px;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 17px;
-}
-
 .contact-b .button a {
   text-decoration: none;
   color: #6070ff;
 }
 
-/* hovers */
 #projects1 .pro-button .button:hover {
   text-decoration: none;
   color: white;
