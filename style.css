@@ -718,6 +718,7 @@ html {
     align-items: center;
     font-size: 17px;
   }
+
   /* HOvers */
   #projects4 .pro-button .button:hover {
     text-decoration: none;
@@ -1121,7 +1122,7 @@ html {
     border-radius: 8px;
     font-size: 17px;
   }
-  
+
   /* Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 */
   #projects4 {
     grid-column-start: 2;
