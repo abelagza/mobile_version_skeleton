@@ -209,10 +209,7 @@ html {
     font-size: 17px;
   }
 
-
-
   /* Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 */
-
   #projects2 {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -288,11 +285,7 @@ html {
     border-radius: 8px;
     font-size: 17px;
   }
-
-
-
   /* Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 */
-
   #projects3 {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -369,11 +362,7 @@ html {
     border-radius: 8px;
     font-size: 17px;
   }
-
-
-
   /* Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 */
-
   #projects4 {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -727,9 +716,6 @@ html {
     align-items: center;
     font-size: 17px;
   }
-
-
-
   /* HOvers */
   #projects4 .pro-button .button:hover {
     text-decoration: none;
@@ -901,7 +887,7 @@ html {
   }
 
   #projects h1 {
-    color: transparent
+    color: transparent;
   }
 
   #projects1 {
@@ -980,11 +966,7 @@ html {
     border-radius: 8px;
     font-size: 17px;
   }
-
-
-
   /* Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 */
-
   #projects2 {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -1060,11 +1042,7 @@ html {
     border-radius: 8px;
     font-size: 17px;
   }
-
-
-
   /* Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 */
-
   #projects3 {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -1141,11 +1119,7 @@ html {
     border-radius: 8px;
     font-size: 17px;
   }
-
-
-
   /* Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 */
-
   #projects4 {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -1321,7 +1295,6 @@ html {
   #about .about-b .languages li {
     list-style-type: none;
   }
-
 
   #about .about-b .languages .lan-button {
     width: 327px;
