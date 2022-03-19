@@ -586,14 +586,9 @@ header .nav-bar .button-b .burger-button {
   justify-content: center;
   align-items: center;
 }
------------------------------------------------------------------------------------------
-#about .about-a {
-  height: 409px;
-  width: 327px;
-}
 
 #about {
-  height: 1125px;
+  height: 1125.15px;
   background-color: white;
   border-top-right-radius: 100px;
   display: flex;
@@ -601,24 +596,35 @@ header .nav-bar .button-b .burger-button {
   justify-content: flex-start;
   padding: 20px 20px;
   margin: 0% auto;
-  width: 370px;
+  width: 375px;
   border: 2px solid white;
   padding-top: 35%;
 }
 
-#about .title {
+
+
+#about .about-a .title {
   font-weight: 700;
   font-size: 40px;
   padding-bottom: 20px;
   color: #172b4d;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   line-height: 60px;
+  width: 327px;
+  height: 101px;
 }
 
-#about .text {
+#about .about-a .text {
   font-size: 16px;
   line-height: 19px;
   color: #172b4d;
+  width: 327px;
+  height: 144px;
+}
+
+#about .button-c {
+  width: 327px;
+  height: 40px;
 }
 
 #about .button-c .letsconnect {
@@ -637,7 +643,8 @@ header .nav-bar .button-b .burger-button {
   column-gap: 50px;
   list-style-type: none;
   padding: 0%;
-  margin-bottom: 10px;
+  width: 327px;
+  height: 40px;
 }
 
 #about .icons li {
@@ -648,6 +655,11 @@ header .nav-bar .button-b .burger-button {
   width: 25px;
   height: 25px;
   margin-right: 6px;
+}
+
+#about .pro-button {
+  width: 327px;
+  height: 48px;
 }
 
 #about .pro-button .button {
@@ -785,7 +797,6 @@ header .nav-bar .button-b .burger-button {
   text-align: center;
   color: white;
   border: 2px solid #6070ff;
-  margin-top: -150px;
 }
 
 #contact .contact-a {
