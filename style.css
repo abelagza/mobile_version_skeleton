@@ -13,8 +13,9 @@ header .nav-bar {
   justify-content: space-between;
   padding: 20px 20px;
   margin: 0% auto;
-  width: 370px;
+  width: 375px;
   border: 2px solid white;
+  height: 48px;
 }
 
 header .my-logo {
@@ -63,7 +64,7 @@ header .nav-bar .button-b .burger-button {
 }
 
 #body {
-  height: 604px;
+  height: 626px;
   background-repeat: no-repeat;
   background-color: white;
   border-bottom-left-radius: 100px;
@@ -74,31 +75,47 @@ header .nav-bar .button-b .burger-button {
   justify-content: flex-start;
   padding: 20px 20px;
   margin: 0% auto;
-  width: 370px;
+  width: 375px;
   border: 2px solid white;
+}
+
+#body .text-container {
+  width: 327px;
+  height: 398px;
+  display: flex;
+  flex-direction: column;
 }
 
 #body .title {
   font-weight: 700;
-  font-size: 40px;
-  padding-bottom: 20px;
+  font-size: 20px;
   color: #172b4d;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  line-height: 82px;
+  line-height: 50px;
+  width: 327px;
+  height: 150px;
 }
 
 #body .text {
-  font-size: 11px;
+  font-size: 16px;
   line-height: 19px;
   color: #172b4d;
+  width: 327px;
+  height: 146px;
+  line-height: 24px;
+}
+
+#body .button-c {
+  width: 327px;
+  height: 24px;
 }
 
 #body .button-c .letsconnect {
   text-decoration: none;
   color: #7f8cff;
-  font-size: 13px;
-  line-height: 80px;
+  font-size: 16px;
   font-weight: 500;
+  line-height: 24px;
 }
 
 #body .button-c .letsconnect h2 {
@@ -109,6 +126,8 @@ header .nav-bar .button-b .burger-button {
   column-gap: 50px;
   list-style-type: none;
   padding: 0%;
+  width: 327px;
+  height: 42px;
 }
 
 #body .icons li {
@@ -116,8 +135,8 @@ header .nav-bar .button-b .burger-button {
 }
 
 #body .icons .icon {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   margin-right: 6px;
 }
 
@@ -139,45 +158,62 @@ header .nav-bar .button-b .burger-button {
   height: 552px;
   width: 327px;
   border-radius: 16px;
-  border: 2px solid lightgray;
+  border: 1px solid lightgray;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding: 16px;
+  align-items: center;
   margin: 0% auto;
 }
 
 .pro1a {
-  height: 200px;
-  width: 327px;
+  height: 220px;
+  width: 295px;
   margin: 12px 0;
   background-image: url(./images/projects1.png);
-  background-size: 327px 200px;
-  background-repeat: no-repeat;
+  background-size: 295px 220px;
   border-radius: 8px;
+  margin-top: 16px;
 }
 
 .pro1b {
-  height: 327px;
-  width: 327px;
-  margin-top: 10%;
+  height: 80px;
+  width: 295px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 #projects1 .project-title {
   color: #172b4d;
   font-size: 32px;
+  line-height: 44px;
+  width: 295px;
+  height: 36px;
 }
 
 #projects1 .subtitle {
   font-weight: bold;
   font-size: 13px;
-  margin-bottom: 10px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  width: 295px;
+  height: 44px;
+  
 }
 
-#projects1 .project-text {
-  margin-bottom: 10px;
+#projects1 .pro1c {
+  width: 295px;
+  height: 208px;
+}
+
+#projects1 .pro1c .project-text {
   font-size: 15px;
   line-height: 24px;
+  width: 295px;
+  height: 76px;
+  display: flex;
+  align-items: center;
 }
 
 #projects1 .subtitle .dot {
@@ -185,11 +221,15 @@ header .nav-bar .button-b .burger-button {
   color: #7a869a;
 }
 
-#projects1 .lan-tags {
-  margin-bottom: 20px;
+#projects1 .pro1c .lan-tags {
+  padding-left: 0%;
+  width: 295px;
+  height: 60px;
+  display: flex;
+  align-items: center;
 }
 
-#projects1 .lan-tags .tag-button {
+#projects1 .pro1c .lan-tags .tag-button {
   display: inline-block;
   background-color: #ebebff;
   padding: 4px 12px;
@@ -197,16 +237,26 @@ header .nav-bar .button-b .burger-button {
   border-radius: 8px;
   font-size: 12px;
   margin-right: 5px;
-  margin-bottom: 20px;
 }
 
-#projects1 .pro-button .button {
+#projects1 .pro1c .pro-button {
+  width: 295px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+}
+
+#projects1 .pro1c .pro-button .button {
   text-decoration: none;
   color: #6070ff;
   border: 1px solid #6070ff;
-  padding: 0.5em 0.8em;
   border-radius: 8px;
   font-size: 17px;
+  width: 124px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 */
@@ -217,44 +267,59 @@ header .nav-bar .button-b .burger-button {
   height: 596px;
   width: 327px;
   border-radius: 16px;
-  border: 2px solid lightgray;
+  border: 1px solid lightgray;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding: 16px;
+  align-items: center;
   margin: 0% auto;
 }
 
 .pro2a {
-  height: 200px;
-  width: 327px;
+  height: 220px;
+  width: 295px;
   margin: 12px 0;
   background-image: url(./images/projects2.png);
-  background-size: 327px 200px;
-  background-repeat: no-repeat;
+  background-size: 295px 220px;
   border-radius: 8px;
+  margin-top: 16px;
 }
 
 .pro2b {
-  height: 327px;
-  width: 327px;
+  height: 124px;
+  width: 295px;
 }
 
 #projects2 .project-title {
   color: #172b4d;
   font-size: 32px;
+  line-height: 44px;
+  width: 295px;
+  height: 84px;
 }
 
 #projects2 .subtitle {
   font-weight: bold;
   font-size: 13px;
-  margin-bottom: 10px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  width: 295px;
+  height: 44px;
+  
 }
 
-#projects2 .project-text {
-  margin-bottom: 10px;
+#projects2 .pro2c {
+  width: 295px;
+  height: 208px;
+}
+
+#projects2 .pro2c .project-text {
   font-size: 15px;
   line-height: 24px;
+  width: 295px;
+  height: 76px;
+  display: flex;
+  align-items: center;
 }
 
 #projects2 .subtitle .dot {
@@ -262,11 +327,15 @@ header .nav-bar .button-b .burger-button {
   color: #7a869a;
 }
 
-#projects2 .lan-tags {
-  margin-bottom: 20px;
+#projects2 .pro2c .lan-tags {
+  padding-left: 0%;
+  width: 295px;
+  height: 60px;
+  display: flex;
+  align-items: center;
 }
 
-#projects2 .lan-tags .tag-button {
+#projects2 .pro2c .lan-tags .tag-button {
   display: inline-block;
   background-color: #ebebff;
   padding: 4px 12px;
@@ -274,19 +343,30 @@ header .nav-bar .button-b .burger-button {
   border-radius: 8px;
   font-size: 12px;
   margin-right: 5px;
-  margin-bottom: 20px;
 }
 
-#projects2 .pro-button .button {
+#projects2 .pro2c .pro-button {
+  width: 295px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+}
+
+#projects2 .pro2c .pro-button .button {
   text-decoration: none;
   color: #6070ff;
   border: 1px solid #6070ff;
-  padding: 0.5em 0.8em;
   border-radius: 8px;
   font-size: 17px;
+  width: 124px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 Projects 3 */
+
 #projects3 {
   grid-column-start: 2;
   grid-column-end: 3;
@@ -294,45 +374,62 @@ header .nav-bar .button-b .burger-button {
   height: 552px;
   width: 327px;
   border-radius: 16px;
-  border: 2px solid lightgray;
+  border: 1px solid lightgray;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding: 16px;
+  align-items: center;
   margin: 0% auto;
 }
 
 .pro3a {
-  height: 200px;
-  width: 327px;
+  height: 220px;
+  width: 295px;
   margin: 12px 0;
   background-image: url(./images/projects3.png);
-  background-size: 327px 200px;
-  background-repeat: no-repeat;
+  background-size: 295px 220px;
   border-radius: 8px;
+  margin-top: 16px;
 }
 
 .pro3b {
-  height: 327px;
-  width: 327px;
-  margin-top: 10%;
+  height: 80px;
+  width: 295px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 #projects3 .project-title {
   color: #172b4d;
   font-size: 32px;
+  line-height: 44px;
+  width: 295px;
+  height: 36px;
 }
 
 #projects3 .subtitle {
   font-weight: bold;
   font-size: 13px;
-  margin-bottom: 10px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  width: 295px;
+  height: 44px;
+  
 }
 
-#projects3 .project-text {
-  margin-bottom: 10px;
+#projects3 .pro3c {
+  width: 295px;
+  height: 208px;
+}
+
+#projects3 .pro1c .project-text {
   font-size: 15px;
   line-height: 24px;
+  width: 295px;
+  height: 76px;
+  display: flex;
+  align-items: center;
 }
 
 #projects3 .subtitle .dot {
@@ -340,11 +437,15 @@ header .nav-bar .button-b .burger-button {
   color: #7a869a;
 }
 
-#projects3 .lan-tags {
-  margin-bottom: 20px;
+#projects3 .pro3c .lan-tags {
+  padding-left: 0%;
+  width: 295px;
+  height: 60px;
+  display: flex;
+  align-items: center;
 }
 
-#projects3 .lan-tags .tag-button {
+#projects3 .pro3c .lan-tags .tag-button {
   display: inline-block;
   background-color: #ebebff;
   padding: 4px 12px;
@@ -352,16 +453,26 @@ header .nav-bar .button-b .burger-button {
   border-radius: 8px;
   font-size: 12px;
   margin-right: 5px;
-  margin-bottom: 20px;
 }
 
-#projects3 .pro-button .button {
+#projects3 .pro3c .pro-button {
+  width: 295px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+}
+
+#projects3 .pro3c .pro-button .button {
   text-decoration: none;
   color: #6070ff;
   border: 1px solid #6070ff;
-  padding: 0.5em 0.8em;
   border-radius: 8px;
   font-size: 17px;
+  width: 124px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 Projects 4 */
@@ -372,56 +483,78 @@ header .nav-bar .button-b .burger-button {
   height: 596px;
   width: 327px;
   border-radius: 16px;
-  border: 2px solid lightgray;
+  border: 1px solid lightgray;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding: 16px;
+  align-items: center;
   margin: 0% auto;
 }
 
 .pro4a {
-  height: 200px;
-  width: 327px;
+  height: 220px;
+  width: 295px;
   margin: 12px 0;
   background-image: url(./images/projects4.png);
-  background-size: 327px 200px;
+  background-size: 295px 220px;
   background-repeat: no-repeat;
   border-radius: 8px;
+  margin-top: 16px;
 }
 
 .pro4b {
-  height: 327px;
-  width: 327px;
+  height: 124px;
+  width: 295px;
 }
 
 #projects4 .project-title {
   color: #172b4d;
   font-size: 32px;
+  line-height: 44px;
+  width: 295px;
+  height: 84px;
 }
 
 #projects4 .subtitle {
   font-weight: bold;
   font-size: 13px;
-  margin-bottom: 10px;
-}
-
-#projects4 .project-text {
-  margin-bottom: 10px;
-  font-size: 15px;
-  line-height: 24px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  width: 295px;
+  height: 44px;
+  
 }
 
 #projects4 .subtitle .dot {
+  color: gray;
+}
+
+#projects4 .pro4c {
+  width: 295px;
+  height: 208px;
+}
+
+#projects4 .pro4c .project-text {
+  font-size: 15px;
+  line-height: 24px;
+  width: 295px;
+  height: 76px;
+}
+
+#projects4 .pro4c .subtitle .dot {
   font-size: 13px;
   color: #7a869a;
 }
 
-#projects4 .lan-tags {
-  margin-bottom: 20px;
+#projects4 .pro4c .lan-tags {
+  padding-left: 0%;
+  width: 295px;
+  height: 60px;
+  display: flex;
+  align-items: center;
 }
 
-#projects4 .lan-tags .tag-button {
+#projects4 .pro4c .lan-tags .tag-button {
   display: inline-block;
   background-color: #ebebff;
   padding: 4px 12px;
@@ -429,18 +562,28 @@ header .nav-bar .button-b .burger-button {
   border-radius: 8px;
   font-size: 12px;
   margin-right: 5px;
-  margin-bottom: 20px;
 }
 
-#projects4 .pro-button .button {
+#projects4 .pro4c .pro-button {
+  width: 295px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+}
+
+#projects4 .pro4c .pro-button .button {
   text-decoration: none;
   color: #6070ff;
   border: 1px solid #6070ff;
-  padding: 0.5em 0.8em;
   border-radius: 8px;
   font-size: 17px;
+  width: 124px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+-----------------------------------------------------------------------------------------
 #about .about-a {
   height: 409px;
   width: 327px;
