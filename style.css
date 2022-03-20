@@ -976,43 +976,63 @@ header .nav-bar .button-b .burger-button {
   text-decoration: none;
   color: white;
   background-color: #6070ff;
-  padding: 0.5em 0.8em;
   border-radius: 8px;
   font-size: 17px;
+  width: 124px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #projects4 .pro-button .button:hover {
   text-decoration: none;
   color: white;
   background-color: #6070ff;
-  padding: 0.5em 0.8em;
   border-radius: 8px;
   font-size: 17px;
+  width: 124px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #projects3 .pro-button .button:hover {
   text-decoration: none;
   color: white;
   background-color: #6070ff;
-  padding: 0.5em 0.8em;
   border-radius: 8px;
   font-size: 17px;
+  width: 124px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #about .pro-button .button:hover {
   text-decoration: none;
-  color: white;
   background-color: #6070ff;
-  padding: 0.5em 0.8em;
+  color: white;
   border-radius: 8px;
   font-size: 17px;
+  width: 162px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #projects2 .pro-button .button:hover {
   text-decoration: none;
   color: white;
   background-color: #6070ff;
-  padding: 0.5em 0.8em;
   border-radius: 8px;
   font-size: 17px;
+  width: 124px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
