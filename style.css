@@ -7,11 +7,11 @@ html {
   --text-color-titles: #172b4d;
   --color-main: #6070ff;
   --color-regular-text: #172b4d;
-  --color-grayed-out: #7A869A;
-  --color-tags-background: #EBEBFF;
+  --color-grayed-out: #7a869a;
+  --color-tags-background: #ebebff;
   --background-cards-text: #344563;
-  --cards-border: #DFE1E6;
-  --about-subcategories-lan-fra-ski: #F7F7F9;
+  --cards-border: #dfe1e6;
+  --about-subcategories-lan-fra-ski: #f7f7f9;
 }
 
 * {
@@ -162,7 +162,7 @@ header .nav-bar .button-b .burger-button {
   color: transparent;
 }
 
-#projects1 {
+section.project-a {
   grid-column-start: 2;
   grid-column-end: 3;
   background-color: white;
@@ -186,7 +186,7 @@ header .nav-bar .button-b .burger-button {
   margin-top: 16px;
 }
 
-.pro1b {
+div.pro-1b {
   height: 80px;
   width: 295px;
   display: flex;
@@ -194,7 +194,7 @@ header .nav-bar .button-b .burger-button {
   flex-direction: column;
 }
 
-#projects1 .project-title {
+div.project-title-a {
   color: var(--text-color-titles);
   font-size: 32px;
   line-height: 44px;
@@ -202,7 +202,7 @@ header .nav-bar .button-b .burger-button {
   height: 36px;
 }
 
-#projects1 .subtitle {
+div.subtitle {
   font-weight: bold;
   font-size: 13px;
   line-height: 16px;
@@ -212,12 +212,12 @@ header .nav-bar .button-b .burger-button {
   height: 44px;
 }
 
-#projects1 .pro1c {
+div.pro-c {
   width: 295px;
   height: 208px;
 }
 
-#projects1 .pro1c .project-text {
+div.project-text {
   font-size: 15px;
   line-height: 24px;
   width: 295px;
@@ -226,12 +226,12 @@ header .nav-bar .button-b .burger-button {
   align-items: center;
 }
 
-#projects1 .subtitle .dot {
+span.dot {
   font-size: 13px;
   color: var(--color-grayed-out);
 }
 
-#projects1 .pro1c .lan-tags {
+ul.lan-tags {
   padding-left: 0%;
   width: 295px;
   height: 60px;
@@ -239,7 +239,7 @@ header .nav-bar .button-b .burger-button {
   align-items: center;
 }
 
-#projects1 .pro1c .lan-tags .tag-button {
+li.tag-button {
   display: inline-block;
   background-color: #ebebff;
   padding: 4px 12px;
@@ -249,44 +249,14 @@ header .nav-bar .button-b .burger-button {
   margin-right: 5px;
 }
 
-#about .pro-button {
-  width: 327px;
-  height: 48px;
-}
-
-#about .pro-button .button {
-  text-decoration: none;
-  color: var(--color-main);
-  border: 1px solid var(--color-main);
-  border-radius: 8px;
-  font-size: 17px;
-  width: 162px;
-  height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#projects1 .pro1c .pro-button {
+div.pro-button {
   width: 295px;
   height: 72px;
   display: flex;
   align-items: center;
 }
 
-#contact .contact-b .button {
-  width: 140px;
-  height: 48px;
-  background-color: white;
-  border-radius: 8px;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 17px;
-}
-
-#projects1 .pro1c .pro-button .button {
+a.button {
   text-decoration: none;
   color: var(--color-main);
   border: 1px solid var(--color-main);
@@ -299,7 +269,7 @@ header .nav-bar .button-b .burger-button {
   align-items: center;
 }
 
-#projects2 {
+section.project-b {
   grid-column-start: 2;
   grid-column-end: 3;
   background-color: white;
@@ -323,100 +293,20 @@ header .nav-bar .button-b .burger-button {
   margin-top: 16px;
 }
 
-.pro2b {
+div.pro-2b {
   height: 124px;
   width: 295px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-#projects2 .project-title {
+div.project-title-b {
   color: var(--text-color-titles);
   font-size: 32px;
   line-height: 44px;
   width: 295px;
   height: 84px;
-}
-
-#projects2 .subtitle {
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 16px;
-  display: flex;
-  align-items: center;
-  width: 295px;
-  height: 44px;
-}
-
-#projects2 .pro2c {
-  width: 295px;
-  height: 208px;
-}
-
-#projects2 .pro2c .project-text {
-  font-size: 15px;
-  line-height: 24px;
-  width: 295px;
-  height: 76px;
-  display: flex;
-  align-items: center;
-}
-
-#projects2 .subtitle .dot {
-  font-size: 13px;
-  color: var(--color-grayed-out);
-}
-
-#projects2 .pro2c .lan-tags {
-  padding-left: 0%;
-  width: 295px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-
-}
-
-#projects2 .pro2c .lan-tags .tag-button {
-  display: inline-block;
-  background-color: var(--color-tags-background);
-  padding: 4px 12px;
-  color: var(--color-main);
-  border-radius: 8px;
-  font-size: 12px;
-  margin-right: 5px;
-
-}
-
-#projects2 .pro2c .pro-button {
-  width: 295px;
-  height: 72px;
-  display: flex;
-  align-items: center;
-}
-
-#projects2 .pro2c .pro-button .button {
-  text-decoration: none;
-  color: var(--color-main);
-  border: 1px solid var(--color-main);
-  border-radius: 8px;
-  font-size: 17px;
-  width: 124px;
-  height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#projects3 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  background-color: white;
-  height: 552px;
-  width: 327px;
-  border-radius: 16px;
-  border: 1px solid var(--cards-border);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0% auto;
 }
 
 .pro3a {
@@ -429,103 +319,6 @@ header .nav-bar .button-b .burger-button {
   margin-top: 16px;
 }
 
-.pro3b {
-  height: 80px;
-  width: 295px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-#projects3 .project-title {
-  color: var(--text-color-titles);
-  font-size: 32px;
-  line-height: 44px;
-  width: 295px;
-  height: 36px;
-}
-
-#projects3 .subtitle {
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 16px;
-  display: flex;
-  align-items: center;
-  width: 295px;
-  height: 44px;
-}
-
-#projects3 .pro3c {
-  width: 295px;
-  height: 208px;
-}
-
-#projects3 .pro1c .project-text {
-  font-size: 15px;
-  line-height: 24px;
-  width: 295px;
-  height: 76px;
-  display: flex;
-  align-items: center;
-}
-
-#projects3 .subtitle .dot {
-  font-size: 13px;
-  color: var(--color-grayed-out);
-}
-
-#projects3 .pro3c .lan-tags {
-  padding-left: 0%;
-  width: 295px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-}
-
-#projects3 .pro3c .lan-tags .tag-button {
-  display: inline-block;
-  background-color: #ebebff;
-  padding: 4px 12px;
-  color: var(--color-main);
-  border-radius: 8px;
-  font-size: 12px;
-  margin-right: 5px;
-}
-
-#projects3 .pro3c .pro-button {
-  width: 295px;
-  height: 72px;
-  display: flex;
-  align-items: center;
-}
-
-#projects3 .pro3c .pro-button .button {
-  text-decoration: none;
-  color: var(--color-main);
-  border: 1px solid var(--color-main);
-  border-radius: 8px;
-  font-size: 17px;
-  width: 124px;
-  height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#projects4 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  background-color: white;
-  height: 596px;
-  width: 327px;
-  border-radius: 16px;
-  border: 1px solid var(--cards-border);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0% auto;
-}
-
 .pro4a {
   height: 220px;
   width: 295px;
@@ -535,85 +328,6 @@ header .nav-bar .button-b .burger-button {
   background-repeat: no-repeat;
   border-radius: 8px;
   margin-top: 16px;
-}
-
-.pro4b {
-  height: 124px;
-  width: 295px;
-}
-
-#projects4 .project-title {
-  color: var(--text-color-titles);
-  font-size: 32px;
-  line-height: 44px;
-  width: 295px;
-  height: 84px;
-}
-
-#projects4 .subtitle {
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 16px;
-  display: flex;
-  align-items: center;
-  width: 295px;
-  height: 44px;
-}
-
-#projects4 .subtitle .dot {
-  color: var(--color-grayed-out);
-}
-
-#projects4 .pro4c {
-  width: 295px;
-  height: 208px;
-}
-
-#projects4 .pro4c .project-text {
-  font-size: 15px;
-  line-height: 24px;
-  width: 295px;
-  height: 76px;
-}
-
-
-
-#projects4 .pro4c .lan-tags {
-  padding-left: 0%;
-  width: 295px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-}
-
-#projects4 .pro4c .lan-tags .tag-button {
-  display: inline-block;
-  background-color: var(--color-tags-background);
-  padding: 4px 12px;
-  color: var(--color-main);
-  border-radius: 8px;
-  font-size: 12px;
-  margin-right: 5px;
-}
-
-#projects4 .pro4c .pro-button {
-  width: 295px;
-  height: 72px;
-  display: flex;
-  align-items: center;
-}
-
-#projects4 .pro4c .pro-button .button {
-  text-decoration: none;
-  color: var(--color-main);
-  border: 1px solid var(--color-main);
-  border-radius: 8px;
-  font-size: 17px;
-  width: 124px;
-  height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #about {
