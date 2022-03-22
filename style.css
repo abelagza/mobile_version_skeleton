@@ -663,6 +663,12 @@ input[type="email"]::placeholder {
   padding-left: 10px;
 }
 
+.text-area::-webkit-input-placeholder {
+  padding-left: 10px;
+  padding-top: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
 #contact .contact-b .email {
   width: 360px;
   height: 48px;
@@ -701,9 +707,10 @@ input[type="email"]::placeholder {
   padding: 15px;
 }
 
-.contact-b .button a {
+button .button {
   text-decoration: none;
   color: var(--color-main);
+  align-self: flex-start;
 }
 
 /* Hovers */
