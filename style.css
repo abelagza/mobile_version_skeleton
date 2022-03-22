@@ -652,6 +652,15 @@ div.project-title-b {
   color: black;
   display: flex;
   justify-content: left;
+  font-size: 18px;
+}
+
+input[type="text"]::placeholder {
+  padding-left: 10px;
+}
+
+input[type="email"]::placeholder {
+  padding-left: 10px;
 }
 
 #contact .contact-b .email {
@@ -696,6 +705,8 @@ div.project-title-b {
   text-decoration: none;
   color: var(--color-main);
 }
+
+/* Hovers */
 
 #projects1 .pro-button .button:hover {
   text-decoration: none;
