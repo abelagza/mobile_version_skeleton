@@ -3,6 +3,17 @@ html {
   font-family: 'Poppins', sans-serif;
 }
 
+:root {
+  --text-color-titles: #172b4d;
+  --color-main: #6070ff;
+  --color-regular-text: #172b4d;
+  --color-grayed-out: #7A869A;
+  --color-tags-background: #EBEBFF;
+  --background-cards-text: #344563;
+  --cards-border: #DFE1E6;
+  --about-subcategories-lan-fra-ski: #F7F7F9;
+}
+
 * {
   margin: 0%;
 }
@@ -20,9 +31,9 @@ header .nav-bar {
 
 header .my-logo {
   font-weight: 700;
-  color: #6070ff;
+  color: var(--color-main);
   text-decoration: none;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 header .nav-bar .button-b {
@@ -39,7 +50,7 @@ header .nav-bar .button-b {
 header .nav-bar .button-b .burger-button {
   width: 25px;
   height: 3px;
-  background: #6070ff;
+  background: var(--color-main);
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
 }
@@ -51,7 +62,7 @@ header .nav-bar .button-b .burger-button {
   width: 25px;
   height: 3px;
   border-radius: 5px;
-  background: #6070ff;
+  background: var(--color-main);
   transition: all 0.5s ease-in-out;
 }
 
@@ -88,7 +99,7 @@ header .nav-bar .button-b .burger-button {
 #body .title {
   font-weight: 700;
   font-size: 30px;
-  color: #172b4d;
+  color: var(--text-color-titles);
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   line-height: 52px;
   width: 327px;
@@ -98,7 +109,7 @@ header .nav-bar .button-b .burger-button {
 
 #body .text {
   font-size: 16px;
-  color: #172b4d;
+  color: var(--background-cards-text);
   width: 327px;
   height: 146px;
   line-height: 24px;
@@ -113,7 +124,7 @@ header .nav-bar .button-b .burger-button {
 
 #body .button-c .letsconnect {
   text-decoration: none;
-  color: #7f8cff;
+  color: var(--color-main);
   font-size: 11px;
   font-weight: 500;
   line-height: 24px;
@@ -158,7 +169,7 @@ header .nav-bar .button-b .burger-button {
   height: 552px;
   width: 327px;
   border-radius: 16px;
-  border: 1px solid lightgray;
+  border: 1px solid var(--cards-border);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -184,7 +195,7 @@ header .nav-bar .button-b .burger-button {
 }
 
 #projects1 .project-title {
-  color: #172b4d;
+  color: var(--text-color-titles);
   font-size: 32px;
   line-height: 44px;
   width: 295px;
@@ -217,7 +228,7 @@ header .nav-bar .button-b .burger-button {
 
 #projects1 .subtitle .dot {
   font-size: 13px;
-  color: #7a869a;
+  color: var(--color-grayed-out);
 }
 
 #projects1 .pro1c .lan-tags {
@@ -232,7 +243,7 @@ header .nav-bar .button-b .burger-button {
   display: inline-block;
   background-color: #ebebff;
   padding: 4px 12px;
-  color: #6070ff;
+  color: var(--color-main);
   border-radius: 8px;
   font-size: 12px;
   margin-right: 5px;
@@ -245,8 +256,8 @@ header .nav-bar .button-b .burger-button {
 
 #about .pro-button .button {
   text-decoration: none;
-  color: #6070ff;
-  border: 1px solid #6070ff;
+  color: var(--color-main);
+  border: 1px solid var(--color-main);
   border-radius: 8px;
   font-size: 17px;
   width: 162px;
@@ -277,8 +288,8 @@ header .nav-bar .button-b .burger-button {
 
 #projects1 .pro1c .pro-button .button {
   text-decoration: none;
-  color: #6070ff;
-  border: 1px solid #6070ff;
+  color: var(--color-main);
+  border: 1px solid var(--color-main);
   border-radius: 8px;
   font-size: 17px;
   width: 124px;
@@ -295,7 +306,7 @@ header .nav-bar .button-b .burger-button {
   height: 596px;
   width: 327px;
   border-radius: 16px;
-  border: 1px solid lightgray;
+  border: 1px solid var(--cards-border);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -318,7 +329,7 @@ header .nav-bar .button-b .burger-button {
 }
 
 #projects2 .project-title {
-  color: #172b4d;
+  color: var(--text-color-titles);
   font-size: 32px;
   line-height: 44px;
   width: 295px;
@@ -351,7 +362,7 @@ header .nav-bar .button-b .burger-button {
 
 #projects2 .subtitle .dot {
   font-size: 13px;
-  color: #7a869a;
+  color: var(--color-grayed-out);
 }
 
 #projects2 .pro2c .lan-tags {
@@ -360,16 +371,18 @@ header .nav-bar .button-b .burger-button {
   height: 60px;
   display: flex;
   align-items: center;
+
 }
 
 #projects2 .pro2c .lan-tags .tag-button {
   display: inline-block;
-  background-color: #ebebff;
+  background-color: var(--color-tags-background);
   padding: 4px 12px;
-  color: #6070ff;
+  color: var(--color-main);
   border-radius: 8px;
   font-size: 12px;
   margin-right: 5px;
+
 }
 
 #projects2 .pro2c .pro-button {
@@ -381,8 +394,8 @@ header .nav-bar .button-b .burger-button {
 
 #projects2 .pro2c .pro-button .button {
   text-decoration: none;
-  color: #6070ff;
-  border: 1px solid #6070ff;
+  color: var(--color-main);
+  border: 1px solid var(--color-main);
   border-radius: 8px;
   font-size: 17px;
   width: 124px;
@@ -399,7 +412,7 @@ header .nav-bar .button-b .burger-button {
   height: 552px;
   width: 327px;
   border-radius: 16px;
-  border: 1px solid lightgray;
+  border: 1px solid var(--cards-border);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -425,7 +438,7 @@ header .nav-bar .button-b .burger-button {
 }
 
 #projects3 .project-title {
-  color: #172b4d;
+  color: var(--text-color-titles);
   font-size: 32px;
   line-height: 44px;
   width: 295px;
@@ -458,7 +471,7 @@ header .nav-bar .button-b .burger-button {
 
 #projects3 .subtitle .dot {
   font-size: 13px;
-  color: #7a869a;
+  color: var(--color-grayed-out);
 }
 
 #projects3 .pro3c .lan-tags {
@@ -473,7 +486,7 @@ header .nav-bar .button-b .burger-button {
   display: inline-block;
   background-color: #ebebff;
   padding: 4px 12px;
-  color: #6070ff;
+  color: var(--color-main);
   border-radius: 8px;
   font-size: 12px;
   margin-right: 5px;
@@ -488,8 +501,8 @@ header .nav-bar .button-b .burger-button {
 
 #projects3 .pro3c .pro-button .button {
   text-decoration: none;
-  color: #6070ff;
-  border: 1px solid #6070ff;
+  color: var(--color-main);
+  border: 1px solid var(--color-main);
   border-radius: 8px;
   font-size: 17px;
   width: 124px;
@@ -506,7 +519,7 @@ header .nav-bar .button-b .burger-button {
   height: 596px;
   width: 327px;
   border-radius: 16px;
-  border: 1px solid lightgray;
+  border: 1px solid var(--cards-border);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -530,7 +543,7 @@ header .nav-bar .button-b .burger-button {
 }
 
 #projects4 .project-title {
-  color: #172b4d;
+  color: var(--text-color-titles);
   font-size: 32px;
   line-height: 44px;
   width: 295px;
@@ -548,7 +561,7 @@ header .nav-bar .button-b .burger-button {
 }
 
 #projects4 .subtitle .dot {
-  color: gray;
+  color: var(--color-grayed-out);
 }
 
 #projects4 .pro4c {
@@ -563,10 +576,7 @@ header .nav-bar .button-b .burger-button {
   height: 76px;
 }
 
-#projects4 .pro4c .subtitle .dot {
-  font-size: 13px;
-  color: #7a869a;
-}
+
 
 #projects4 .pro4c .lan-tags {
   padding-left: 0%;
@@ -578,9 +588,9 @@ header .nav-bar .button-b .burger-button {
 
 #projects4 .pro4c .lan-tags .tag-button {
   display: inline-block;
-  background-color: #ebebff;
+  background-color: var(--color-tags-background);
   padding: 4px 12px;
-  color: #6070ff;
+  color: var(--color-main);
   border-radius: 8px;
   font-size: 12px;
   margin-right: 5px;
@@ -595,8 +605,8 @@ header .nav-bar .button-b .burger-button {
 
 #projects4 .pro4c .pro-button .button {
   text-decoration: none;
-  color: #6070ff;
-  border: 1px solid #6070ff;
+  color: var(--color-main);
+  border: 1px solid var(--color-main);
   border-radius: 8px;
   font-size: 17px;
   width: 124px;
@@ -630,7 +640,7 @@ header .nav-bar .button-b .burger-button {
 #about .about-a .title {
   font-weight: 700;
   font-size: 30px;
-  color: #172b4d;
+  color: var(--text-color-titles);
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   line-height: 52px;
   width: 327px;
@@ -641,7 +651,7 @@ header .nav-bar .button-b .burger-button {
 #about .about-a .text {
   font-size: 16px;
   line-height: 24px;
-  color: #172b4d;
+  color: var(--color-regular-text);
   width: 327px;
   height: 144px;
   display: flex;
@@ -659,7 +669,7 @@ header .nav-bar .button-b .burger-button {
 
 #about .button-c .letsconnect {
   text-decoration: none;
-  color: #7f8cff;
+  color: var(--color-main);
   font-size: 11px;
   font-weight: 500;
 }
@@ -771,7 +781,7 @@ header .nav-bar .button-b .burger-button {
 #about .about-b .languages .js {
   width: 303px;
   height: 67px;
-  background-color: #f7f7f9;
+  background-color: var(--about-subcategories-lan-fra-ski);
   border-radius: 8px;
   font-size: 15px;
 }
@@ -794,7 +804,7 @@ header .nav-bar .button-b .burger-button {
 #about .about-b .languages .html {
   width: 303px;
   height: 67px;
-  background-color: #f7f7f9;
+  background-color: var(--about-subcategories-lan-fra-ski);
   border-radius: 8px;
   margin: 5% 0%;
   font-size: 15px;
@@ -804,7 +814,7 @@ header .nav-bar .button-b .burger-button {
 #about .about-b .languages .css {
   width: 303px;
   height: 67px;
-  background-color: #f7f7f9;
+  background-color: var(--about-subcategories-lan-fra-ski);
   border-radius: 8px;
   font-size: 15px;
   list-style-type: none;
@@ -821,7 +831,7 @@ header .nav-bar .button-b .burger-button {
 #about .about-b .frameworks .frameworks-button {
   width: 327px;
   height: 72px;
-  border-bottom: 1px solid #dfe1e6;
+  border-bottom: 1px solid var(--cards-border);
   font-size: 20px;
   display: flex;
   align-items: center;
@@ -852,7 +862,7 @@ header .nav-bar .button-b .burger-button {
 #about .about-b .skills .skills-button {
   width: 327px;
   height: 72px;
-  border-bottom: 1px solid #dfe1e6;
+  border-bottom: 1px solid var(--cards-border);
   font-size: 20px;
   display: flex;
   align-items: center;
@@ -882,7 +892,7 @@ header .nav-bar .button-b .burger-button {
 
 #contact {
   height: 1000px;
-  background-color: #6070ff;
+  background-color: var(--color-main);
   border-top-left-radius: 120px;
   padding: 20px 20px;
   margin: 0% auto;
@@ -891,7 +901,7 @@ header .nav-bar .button-b .burger-button {
   background-size: contain;
   text-align: center;
   color: white;
-  border: 4px solid #6070ff;
+  border: 4px solid var(--color-main);
   margin-top: -100px;
   display: flex;
   flex-direction: column;
@@ -922,7 +932,7 @@ header .nav-bar .button-b .burger-button {
   width: 360px;
   height: 48px;
   background-color: white;
-  border: 1px solid #cfd8dc;
+  border: 1px solid var(--color-tags-background);
   border-radius: 8px;
   color: black;
   display: flex;
@@ -933,7 +943,7 @@ header .nav-bar .button-b .burger-button {
   width: 360px;
   height: 48px;
   background-color: white;
-  border: 1px solid #cfd8dc;
+  border: 1px solid var(--cards-border);
   border-radius: 8px;
   margin-top: 20px;
   color: black;
@@ -946,10 +956,10 @@ header .nav-bar .button-b .burger-button {
   width: 360px;
   height: 170px;
   background-color: white;
-  border: 1px solid #cfd8dc;
+  border: 1px solid var(--cards-border);
   border-radius: 8px;
   margin-top: 20px;
-  color: lightgray;
+  color: var(--color-grayed-out);
   font-size: 17px;
   display: flex;
   justify-content: left;
@@ -969,13 +979,13 @@ header .nav-bar .button-b .burger-button {
 
 .contact-b .button a {
   text-decoration: none;
-  color: #6070ff;
+  color: var(--color-main);
 }
 
 #projects1 .pro-button .button:hover {
   text-decoration: none;
   color: white;
-  background-color: #6070ff;
+  background-color: var(--color-main);
   border-radius: 8px;
   font-size: 17px;
   width: 124px;
@@ -988,7 +998,7 @@ header .nav-bar .button-b .burger-button {
 #projects4 .pro-button .button:hover {
   text-decoration: none;
   color: white;
-  background-color: #6070ff;
+  background-color: var(--color-main);
   border-radius: 8px;
   font-size: 17px;
   width: 124px;
@@ -1001,7 +1011,7 @@ header .nav-bar .button-b .burger-button {
 #projects3 .pro-button .button:hover {
   text-decoration: none;
   color: white;
-  background-color: #6070ff;
+  background-color: var(--color-main);
   border-radius: 8px;
   font-size: 17px;
   width: 124px;
@@ -1013,7 +1023,7 @@ header .nav-bar .button-b .burger-button {
 
 #about .pro-button .button:hover {
   text-decoration: none;
-  background-color: #6070ff;
+  background-color: var(--color-main);
   color: white;
   border-radius: 8px;
   font-size: 17px;
@@ -1027,7 +1037,7 @@ header .nav-bar .button-b .burger-button {
 #projects2 .pro-button .button:hover {
   text-decoration: none;
   color: white;
-  background-color: #6070ff;
+  background-color: var(--color-main);
   border-radius: 8px;
   font-size: 17px;
   width: 124px;
