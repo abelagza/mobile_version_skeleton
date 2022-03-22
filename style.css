@@ -12,11 +12,11 @@ html {
   --background-cards-text: #344563;
   --cards-border: #dfe1e6;
   --about-subcategories-lan-fra-ski: #f7f7f9;
+  --button-pressed: #2230d2;
 }
 
 * {
   margin: 0%;
-
 }
 
 header .nav-bar {
@@ -721,69 +721,30 @@ input[type="email"]::placeholder {
   margin-top: 22px;
 }
 
-/* Hovers */
-
-#projects1 .pro-button .button:hover {
+.contact-b .button:hover {
   text-decoration: none;
-  color: white;
   background-color: var(--color-main);
-  border-radius: 8px;
-  font-size: 17px;
-  width: 124px;
+  align-self: flex-start;
+  color: white;
+  width: 140px;
   height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 17px;
+  border-radius: 8px;
+  float: left;
+  margin-top: 22px;
+  border: 1px solid white;
 }
 
-#projects4 .pro-button .button:hover {
+.contact-b .button:active {
   text-decoration: none;
+  background-color: var(--button-pressed);
+  align-self: flex-start;
   color: white;
-  background-color: var(--color-main);
-  border-radius: 8px;
-  font-size: 17px;
-  width: 124px;
+  width: 140px;
   height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#projects3 .pro-button .button:hover {
-  text-decoration: none;
-  color: white;
-  background-color: var(--color-main);
-  border-radius: 8px;
   font-size: 17px;
-  width: 124px;
-  height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#about .pro-button .button:hover {
-  text-decoration: none;
-  background-color: var(--color-main);
-  color: white;
   border-radius: 8px;
-  font-size: 17px;
-  width: 162px;
-  height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#projects2 .pro-button .button:hover {
-  text-decoration: none;
-  color: white;
-  background-color: var(--color-main);
-  border-radius: 8px;
-  font-size: 17px;
-  width: 124px;
-  height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  float: left;
+  margin-top: 22px;
+  border: 1px solid white;
 }
