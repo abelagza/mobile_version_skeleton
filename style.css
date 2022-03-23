@@ -283,6 +283,19 @@ a.button:hover {
   align-items: center;
 }
 
+a.button:active {
+  text-decoration: none;
+  background-color: var(--button-pressed);
+  color: white;
+  width: 124px;
+  height: 48px;
+  font-size: 17px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 section.project-b {
   grid-column-start: 2;
   grid-column-end: 3;
@@ -757,7 +770,7 @@ input[type="email"]::placeholder {
 }
 
 .contact-b .button:active {
-  text-decoration: none; 
+  text-decoration: none;
   background-color: var(--button-pressed);
   align-self: flex-start;
   color: white;
