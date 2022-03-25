@@ -11,7 +11,7 @@
   --button-pressed: #2230d2;
   --background-color-main: #f4f5f7;
  }
-  
+
  * {
   padding: 0%;
   margin: 0%;
@@ -140,21 +140,46 @@
  #projects {
   width: 100%;
   height: 294vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 80% 1fr;
+  grid-template-rows: 25% 25% 25% 25%;
  }
   
  #projects .project-a {
-  width: 80%;
+  width: 100%;
   height: 54vh;
   background-color: white;
   border: 1px solid var(--cards-border);
   border-radius: 24px;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: center;  
  }
+
+ .pro-1 {
+  align-self: center;
+  grid-column: 2/3;
+  grid-row: 1/2;
+ }
+
+.pro-2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  align-self: center;
+}
+
+.pro-3 {
+  align-self: center;
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.pro-4 {
+  align-self: center;
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
 
  .title-pro {
   font-size: 40px;
@@ -178,6 +203,33 @@
 }
 
 a.button {
+  text-decoration: none;
+  color: var(--color-main);
+  border: 1px solid var(--color-main);
+  border-radius: 8px;
+  font-size: 17px;
+  width: 124px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a.button:hover {
+  text-decoration: none;
+  color: white;
+  background-color: var(--color-main);
+  border-radius: 8px;
+  font-size: 17px;
+  width: 124px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+a.button:active {
   text-decoration: none;
   color: white;
   background-color: var(--button-pressed);
@@ -254,7 +306,7 @@ li.tag-button {
  }
 
  #projects .project-b {
-  width: 80%;
+  width: 100%;
   height: 54vh;
   background-color: white;
   border: 1px solid var(--cards-border);
@@ -275,7 +327,6 @@ li.tag-button {
   height: 49vh;
   padding: 24px;
  }
-  /* About About About About About About About About */
 
  #about {
   width: 100%;
@@ -287,7 +338,7 @@ li.tag-button {
   justify-content: center;
   gap: 5%;
   align-items: flex-start;
-  padding-top: 10vh;
+  padding-top: 15vh;
  }
 
  #about .title {
@@ -332,6 +383,8 @@ li.tag-button {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+
  }
 
  .pro-button .about-button:active {
@@ -345,6 +398,8 @@ li.tag-button {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+
  }
 
  #about .about-b {
@@ -554,26 +609,19 @@ input[type="email"]::placeholder {
   border-radius: 8px;
   margin-top: 22px;
 }
-
-
   
-  /* Tablet Tablet Tablet Tablet Tablet Tablet Tablet */
-  
- @media only screen 
- and (min-device-width: 480px) 
- and (max-device-width: 768px) 
- and (-webkit-min-device-pixel-ratio: 1) {
+ @media only screen and (max-width: 768px) {
 
  #projects {
   width: 100%;
-  height: 294vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 350vh;
+  display: grid;
+  grid-template-columns: 1fr 80% 1fr;
+  grid-template-rows: 25% 25% 25% 25%;
  }
   
  #projects .project-a {
-  width: 54%;
+  width: 85%;
   height: 80vh;
   background-color: white;
   border: 1px solid var(--cards-border);
@@ -585,9 +633,8 @@ input[type="email"]::placeholder {
  }
   
  .project-a .a1 {
-  width: 47%;
+  width: 100%;
   height: 49vh;
-  border: 1px solid red;
  }
   
  .a1 .pro1a {
@@ -621,43 +668,100 @@ input[type="email"]::placeholder {
  }
   
  .project-a .a2 {
-  width: 47%;
+  width: 100%;
   height: 49vh;
-  border: 1px solid green;
   float: left;
  }
   
  #projects .project-b {
-  width: 80%;
-  height: 54vh;
+  width: 85%;
+  height: 80vh;
   background-color: white;
   border: 1px solid var(--cards-border);
   border-radius: 24px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-direction: row-reverse;
+  flex-direction: column;
  }
   
  .project-b .b1 {
-  width: 47%;
+  width: 100%;
   height: 49vh;
-  border: 2px solid black;
  }
   
  .project-b .b2 {
-  width: 47%;
+  width: 100%;
   height: 49vh;
-  border: 2px purple solid;
  }
 
+ .pro-1 {
+  align-self: center;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  justify-self: center;
+ }
 
-
+.pro-2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  align-self: center;
+  justify-self: center;
 }
 
-  
-  
- /* mobile mobile mobile mobile mobile mobile mobile mobile  */
+.pro-3 {
+  align-self: center;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  justify-self: center;
+}
+
+.pro-4 {
+  align-self: center;
+  grid-column: 2/3;
+  grid-row: 4/5;
+  justify-self: center;
+}
+
+
+ .title-pro {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+li.tag-button {
+  display: inline-block;
+  background-color: #ebebff;
+  padding: 1vw 1.2vh;
+  color: var(--color-main);
+  border-radius: 8px;
+  font-size: 1.2vw;
+  margin-right: 5px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about .lan-bttn {
+  width: 80px;
+  height: 13vh;
+  background-color: var(--about-subcategories-lan-fra-ski);
+  padding: 1.2vw;
+  padding-top: 1.3vh;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#about .lan-bttn .text {
+  font-size: 10px;
+  font-weight: 700;
+}
+
+}
   
  @media only screen
   and (min-device-width: 120px)
@@ -1437,4 +1541,3 @@ input[type="email"]::placeholder {
   }
  }
   
- 
