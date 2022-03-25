@@ -115,7 +115,7 @@
   
  body .letsconnect {
   text-decoration: none;
-  font-size: 1.2vw;
+  font-size: 14px;
   line-height: 1.5vw;
   color: var(--color-main);
   font-weight: 400;
@@ -200,6 +200,9 @@ li.tag-button {
   font-size: 1vw;
   margin-right: 5px;
   margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .lan-tags {
@@ -291,33 +294,135 @@ li.tag-button {
    font-size: 40px;
    line-height: 52px;
    margin-bottom: 12px;
+   color: var(--text-color-titles);
  }
 
  #about .text {
    font-size: 16px;
    color: var(--color-regular-text);
+   margin-bottom: 12px;
  }
   
  #about .about-a {
   width: 35%;
   height: 54vh;
-  border: 2px solid yellowgreen;
  }
-  
+ 
+ .pro-button .about-button {
+  text-decoration: none;
+  color: var(--color-main);
+  border: 1px solid var(--color-main);
+  border-radius: 8px;
+  font-size: 17px;
+  width: 124px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .pro-button .about-button:hover {
+  text-decoration: none;
+  color: white;
+  background-color: var(--color-main);
+  border-radius: 8px;
+  font-size: 17px;
+  width: 124px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .pro-button .about-button:active {
+  text-decoration: none;
+  color: white;
+  background-color: var(--button-pressed);
+  border-radius: 8px;
+  font-size: 17px;
+  width: 124px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
  #about .about-b {
-  width: 47%;
+  width: 40%;
   height: 54vh;
-  border: 2px solid fuchsia;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
  }
-  
- .about-b .arrowimg {
-  width: 10px;
-  height: 10px;
+
+ #about .lan-button {
+   display: flex;
+   flex-direction: row;
+   list-style-type: none;
+   gap: 12px;
+ }
+
+ #about .lan-bttn {
+   width: 122px;
+   height: 120px;
+   background-color: var(--about-subcategories-lan-fra-ski);
+   padding-left: 12px;
+   padding-top: 12px;
+   border-radius: 8px;
+ }
+
+ #about .ab-b-containers{
+   width: 100%;
+   height: 72px;
+ }
+
+ #about .languages {
+   height: 216px;
+ }
+
+ #about .languages-button {
+   font-size: 20px;
+   display: flex;
+   flex-direction: row;
+   height: 72px;
+   justify-content: space-between;
+   align-items: center;
+  }
+
+ #about .frameworks-button {
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  height: 72px;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+ #about .skills-button {
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  height: 72px;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+ #about .ab-icon {
+   width: 48px;
+   height: 48px;
+   margin-bottom: 16px;
+ }
+
+ #about .arrowimg {
+  width: 15px;
+  height: 15px;
  }
   
  #about ul .icon {
-  height: 10px;
-  width: 10px;
+  height: 20px;
+  width: 20px;
+  margin-top: 12px;
+  margin-bottom: 12px;
  }
   
   
@@ -341,24 +446,116 @@ li.tag-button {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  margin-top: 103px;
+  width: 447px;
  }
   
  .contact-a h1 {
   font-size: 2.5vw;
   color: white;
+  margin-bottom: 12px;
  }
   
  .contact-a p {
   font-size: 1.5vw;
   color: white;
+  font-weight: 100;
  }
   
- #contact .contact-b {
+ #contact form {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 447px;
+  height: 370;
+  margin-top: 50px;
  }
+
+#contact .contact-a h1 {
+  font-size: 45px;
+}
+
+#contact .contact-a p {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+#contact .contact-b .name {
+  width: 447px;
+  height: 48px;
+  background-color: white;
+  border: 1px solid var(--color-tags-background);
+  color: black;
+  display: flex;
+  justify-content: left;
+  font-size: 18px;
+}
+
+input[type="text"]::placeholder {
+  padding-left: 10px;
+}
+
+input[type="email"]::placeholder {
+  padding-left: 10px;
+}
+
+.text-area::-webkit-input-placeholder {
+  padding-left: 10px;
+  padding-top: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#contact .contact-b .email {
+  width: 447px;
+  height: 48px;
+  background-color: white;
+  border: 1px solid var(--cards-border);
+  margin-top: 20px;
+  color: black;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+}
+
+#contact .contact-b .text-area {
+  width: 447px;
+  height: 170px;
+  background-color: white;
+  border: 1px solid var(--cards-border);
+  margin-top: 20px;
+  color: var(--color-grayed-out);
+  font-size: 17px;
+  display: flex;
+  justify-content: left;
+}
+
+#contact .contact-b .text-area p {
+  padding: 15px;
+}
+
+#contact .contact-b .email p {
+  padding: 15px;
+}
+
+#contact .contact-b .name p {
+  padding: 15px;
+}
+
+.contact-b .button {
+  text-decoration: none;
+  background-color: white;
+  align-self: flex-start;
+  color: var(--color-main);
+  border: none;
+  width: 140px;
+  height: 48px;
+  font-size: 17px;
+  border-radius: 8px;
+  margin-top: 22px;
+}
+
+
   
   /* Tablet Tablet Tablet Tablet Tablet Tablet Tablet */
   
