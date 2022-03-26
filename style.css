@@ -61,6 +61,12 @@ header {
   align-items: center;
 }
 
+.bttn:hover {
+  transition: all 0.5s ease-out;
+  font-weight: 700;
+  background-color: var(--color-tags-background);
+}
+
 .nav-bar .bttnc {
   position: absolute;
   right: 10.7%;
