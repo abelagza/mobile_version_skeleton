@@ -349,13 +349,6 @@ li.tag-button {
   padding-top: 15vh;
 }
 
-#about .title {
-  font-size: 40px;
-  line-height: 52px;
-  margin-bottom: 12px;
-  color: var(--text-color-titles);
-}
-
 #about .text {
   font-size: 16px;
   color: var(--color-regular-text);
@@ -817,7 +810,6 @@ input[type="email"]::placeholder {
   header .nav-bar .button-a {
     width: 50%;
     height: 10vh;
-
   }
 
   header .nav-bar .buttons-c {
@@ -932,9 +924,9 @@ input[type="email"]::placeholder {
   }
 
   #projects {
-  display: grid;
-  grid-template-columns: 1fr 80% 1fr;
-  grid-template-rows: 25% 25% 25% 25%;
+    display: grid;
+    grid-template-columns: 1fr 80% 1fr;
+    grid-template-rows: 25% 25% 25% 25%;
   }
 
   .pro-1 {
@@ -942,19 +934,19 @@ input[type="email"]::placeholder {
     grid-column: 2/3;
     grid-row: 1/2;
   }
-  
+
   .pro-2 {
     grid-column: 2/3;
     grid-row: 2/3;
     align-self: center;
   }
-  
+
   .pro-3 {
     align-self: center;
     grid-column: 2/3;
     grid-row: 3/4;
   }
-  
+
   .pro-4 {
     align-self: center;
     grid-column: 2/3;
