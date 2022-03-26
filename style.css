@@ -106,6 +106,12 @@ header {
   margin-bottom: 1.4vh;
 }
 
+#body .title:hover {
+  color: var(--color-main);
+  transform: rotate(360deg);
+  transition: width 2s, color 2s, height 2s, transform 2s;
+}
+
 #body .text {
   font-size: 1.5vw;
   line-height: 2vw;
