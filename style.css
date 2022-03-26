@@ -61,6 +61,12 @@ header {
   align-items: center;
 }
 
+.bttn:hover {
+  transition: all 0.5s ease-out;
+  font-weight: 700;
+  background-color: var(--color-tags-background);
+}
+
 .nav-bar .bttnc {
   position: absolute;
   right: 10.7%;
@@ -104,6 +110,12 @@ header {
   line-height: 4vw;
   color: var(--text-color-titles);
   margin-bottom: 1.4vh;
+}
+
+#body .title:hover {
+  color: var(--color-main);
+  transform: rotate(360deg);
+  transition: width 2s, color 2s, height 2s, transform 2s;
 }
 
 #body .text {
@@ -335,13 +347,6 @@ li.tag-button {
   gap: 5%;
   align-items: flex-start;
   padding-top: 15vh;
-}
-
-#about .title {
-  font-size: 40px;
-  line-height: 52px;
-  margin-bottom: 12px;
-  color: var(--text-color-titles);
 }
 
 #about .text {
@@ -805,7 +810,6 @@ input[type="email"]::placeholder {
   header .nav-bar .button-a {
     width: 50%;
     height: 10vh;
-
   }
 
   header .nav-bar .buttons-c {
@@ -920,9 +924,9 @@ input[type="email"]::placeholder {
   }
 
   #projects {
-  display: grid;
-  grid-template-columns: 1fr 80% 1fr;
-  grid-template-rows: 25% 25% 25% 25%;
+    display: grid;
+    grid-template-columns: 1fr 80% 1fr;
+    grid-template-rows: 25% 25% 25% 25%;
   }
 
   .pro-1 {
@@ -930,19 +934,19 @@ input[type="email"]::placeholder {
     grid-column: 2/3;
     grid-row: 1/2;
   }
-  
+
   .pro-2 {
     grid-column: 2/3;
     grid-row: 2/3;
     align-self: center;
   }
-  
+
   .pro-3 {
     align-self: center;
     grid-column: 2/3;
     grid-row: 3/4;
   }
-  
+
   .pro-4 {
     align-self: center;
     grid-column: 2/3;
