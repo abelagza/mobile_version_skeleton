@@ -9,9 +9,9 @@
 - CSS, HTML
 - GitHub
 
-## Live Demo (if available)
+## To view a live version of the website, please visit.
 
-[Live Demo Link](https://www.loom.com/share/cbd27c64c2944fc7b0771458587a1fd3)
+[Published website link](https://abelagza.github.io/mobile_version_skeleton/)
 
 
 ## Getting Started
