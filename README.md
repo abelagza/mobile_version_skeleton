@@ -9,9 +9,9 @@
 - CSS, HTML
 - GitHub
 
-## You can access this project online, using the following link.
+## To view a live version of the website, please visit.
 
-[Live Site link](https://abelagza.github.io/mobile_version_skeleton/)
+[Published website link](https://abelagza.github.io/mobile_version_skeleton/)
 
 
 ## Getting Started
