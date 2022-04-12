@@ -43,7 +43,7 @@
 
   header .nav-bar .buttons-c {
    position: fixed;
-   left: -100%;
+   right: -100%;
    top: 90px ;
    font-size: 3rem;
    text-decoration: none;
@@ -56,19 +56,19 @@
    transition: 0.3s;
   }
 
+  header:active .nav-bar .buttons-c {
+    right: 0%;
+  }
+
   header .nav-bar .buttons-c .bttnc {
     list-style: none;
   }
 
-  header .nav-bar .buttons-c .bttn {
+  header .nav-bar .buttons-c .h-bttn {
     text-decoration: none;
     color: white;
     margin: 16px 0;
     
-   }
-
-   header .nav-bar .buttons-c:active {
-     left: 0;
    }
 
   header .nav-bar .button-b {
@@ -79,7 +79,7 @@
     width: 35px;
     height: 35px;
     cursor: pointer;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   .burger-button:nth-child(2) {
@@ -87,7 +87,7 @@
     height: 3px;
     background: var(--color-main);
     border-radius: 5px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     transform: translateY(8px);
   }
 
@@ -98,7 +98,7 @@
     height: 3px;
     border-radius: 5px;
     background: var(--color-main);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   .burger-button:nth-child(3) {
@@ -108,7 +108,7 @@
     height: 3px;
     border-radius: 5px;
     background: var(--color-main);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     transform: translateY(-8px);
   }
 
