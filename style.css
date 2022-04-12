@@ -901,10 +901,18 @@
     width: 50%;
     height: 10vh;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
+    list-style: none;
+    gap: 10px;
   }
 
-  .bttn:hover {
+  .h-bttn {
+    text-decoration: none;
+    color: var(--color-main);
+  }
+
+  .h-bttn:hover {
     transition: all 0.5s ease-out;
     font-weight: 700;
     background-color: var(--color-tags-background);
@@ -1570,10 +1578,18 @@
     width: 50%;
     height: 10vh;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
+    list-style: none;
+    gap: 10px;
   }
 
-  .bttn:hover {
+  .h-bttn {
+    text-decoration: none;
+    color: var(--color-main);
+  }
+
+  .h-bttn:hover {
     transition: all 0.5s ease-out;
     font-weight: 700;
     background-color: var(--color-tags-background);
