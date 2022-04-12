@@ -1,7 +1,12 @@
-const buttonb = document.querySelector(".button-b")
-const navbar = document.querySelector(".nav-bar");
+const hamburger = document.getElementById("hamburger");
+const navUl = document.getElementById("nav-ul");
 
-buttonb.addEventListener("click", () => {
-buttonb.classList.toggle("active");
-navbar.classList.toggle("active");
+hamburger.addEventListener('click', () => {
+    navUl.classList.toggle('show');
+    hamburger.classList.toggle('show')
 })
+
+document.querySelectorAll(".h-bttn").forEach(n => n.addEventListener('click', () => {
+    hamburger.classList.remove("show");
+    navUl.classList.remove("show");
+}))
