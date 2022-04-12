@@ -42,36 +42,32 @@
   }
 
   #nav-ul {
-   position: fixed;
-   right: -200%;
-   top: 90px;
-   font-size: 3rem;
-   text-decoration: none;
-   background-color: var(--color-main);
-   width: 100%;
-   height: 100vh;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   transition: 0.3s;
-   list-style: none;
-   flex-direction: column;
+    position: fixed;
+    right: -200%;
+    top: 90px;
+    font-size: 3rem;
+    text-decoration: none;
+    background-color: var(--color-main);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    list-style: none;
+    flex-direction: column;
   }
 
   #nav-ul.show {
     right: 0%;
     transition: all 0.5s ease-in-out;
   }
-  
-
- 
 
   header .nav-bar .buttons-c .h-bttn {
     text-decoration: none;
     color: white;
     margin: 16px 0;
-    
-   }
+  }
 
   header .nav-bar .button-b {
     position: relative;
@@ -114,22 +110,22 @@
     transform: translateY(-8px);
   }
 
-#hamburger.show .burger-button:nth-child(1) {
-  transform: rotate(45deg);
-  transition: all 0.3s ease-in-out;
+  #hamburger.show .burger-button:nth-child(1) {
+    transform: rotate(45deg);
+    transition: all 0.3s ease-in-out;
   }
 
-#hamburger.show .burger-button:nth-child(2) { 
-display: none;
-transition: all 0.3s ease-in-out;
-}
+  #hamburger.show .burger-button:nth-child(2) {
+    display: none;
+    transition: all 0.3s ease-in-out;
+  }
 
-#hamburger.show .burger-button:nth-child(3) {
-  transform: rotate(-45deg);
-  transition: all 0.3s ease-in-out;
-}
+  #hamburger.show .burger-button:nth-child(3) {
+    transform: rotate(-45deg);
+    transition: all 0.3s ease-in-out;
+  }
 
-#body {
+  #body {
     height: 626px;
     background-repeat: no-repeat;
     background-color: white;
@@ -144,14 +140,14 @@ transition: all 0.3s ease-in-out;
     width: 375px;
   }
 
-#body .text-container {
+  #body .text-container {
     width: 327px;
     height: 398px;
     display: flex;
     flex-direction: column;
   }
 
-#body .title {
+  #body .title {
     font-weight: 700;
     font-size: 30px;
     color: var(--text-color-titles);
@@ -162,7 +158,7 @@ transition: all 0.3s ease-in-out;
     margin-bottom: 12px;
   }
 
-#body .text {
+  #body .text {
     font-size: 16px;
     color: var(--background-cards-text);
     width: 327px;
@@ -171,13 +167,13 @@ transition: all 0.3s ease-in-out;
     margin-bottom: 12px;
   }
 
-#body .button-c {
+  #body .button-c {
     width: 327px;
     height: 24px;
     margin-bottom: 12px;
   }
 
-#body .button-c .letsconnect {
+  #body .button-c .letsconnect {
     text-decoration: none;
     color: var(--color-main);
     font-size: 11px;
@@ -185,11 +181,11 @@ transition: all 0.3s ease-in-out;
     line-height: 24px;
   }
 
-#body .button-c .letsconnect h2 {
+  #body .button-c .letsconnect h2 {
     font-weight: normal;
   }
 
-#body .icons {
+  #body .icons {
     column-gap: 50px;
     list-style-type: none;
     padding: 0%;
