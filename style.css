@@ -42,8 +42,34 @@
   }
 
   header .nav-bar .buttons-c {
-    display: none;
+   position: fixed;
+   left: -100%;
+   top: 90px ;
+   font-size: 3rem;
+   text-decoration: none;
+   background-color: var(--color-main);
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: 0.3s;
   }
+
+  header .nav-bar .buttons-c .bttnc {
+    list-style: none;
+  }
+
+  header .nav-bar .buttons-c .bttn {
+    text-decoration: none;
+    color: white;
+    margin: 16px 0;
+    
+   }
+
+   header .nav-bar .buttons-c:active {
+     left: 0;
+   }
 
   header .nav-bar .button-b {
     position: relative;
@@ -97,6 +123,7 @@ display: none;
 .button-b:active .burger-button:nth-child(3) {
   transform: rotate(-45deg);
 }
+
 
 #body {
     height: 626px;
