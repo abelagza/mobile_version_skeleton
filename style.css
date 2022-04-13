@@ -62,27 +62,20 @@
   }
 
   #nav-ul li {
-    padding: 10px 0 0 28px;
+    padding: 40px 0 0 28px;
   }
 
-  #nav-ul li:nth-child(1) {
-    padding-top: 92px;
+  #nav-ul .h-bttn:nth-child(1) {
+    margin-top: 50px;
   }
 
-  #nav-ul .x-bttn {
-    position: absolute;
-    width: 25px;
-    height: 3px;
-    border-radius: 5px;
-    background: blue;
-    transition: all 0.3s ease-in-out;
+  #nav-ul .closing-bttn {
     display: flex;
-    justify-content: center;
-    align-items: center;
-
+    justify-content: flex-end;
+    position: relative;
+    top: 50px;
+    right: 40px;
   }
-
-  
   
   header .nav-bar .buttons-c .h-bttn {
     text-decoration: none;
