@@ -41,10 +41,10 @@
     font-size: 18px;
   }
 
-  #nav-ul {
+  .bttnc {
     position: fixed;
-    right: 00%;
-    top: 0px;
+    right: -200%;
+    top: 0;
     text-decoration: none;
     background-color: var(--color-main);
     width: 100%;
@@ -54,29 +54,36 @@
     list-style: none;
     flex-direction: column;
     font-weight: 500;
+    opacity: 0.9;
+    z-index: 1;
+    overflow: hidden;
   }
 
-  #nav-ul.show {
+  .bttnc.show {
     right: 0%;
+    position: fixed;
     transition: all 0.5s ease-in-out;
   }
 
-  #nav-ul li {
-    padding: 40px 0 0 28px;
+  .bttnc li {
+    padding: 30px 0 0 28px;
   }
 
-  #nav-ul .h-bttn:nth-child(1) {
-    margin-top: 50px;
-  }
-
-  #nav-ul .closing-bttn {
+  .bttnc .x-bttn {
     display: flex;
     justify-content: flex-end;
     position: relative;
-    top: 50px;
+    top: 5px;
     right: 40px;
+    padding: 0;
   }
-  
+
+  .closing-bttn img {
+    height: 15px;
+    width: 15px;
+    padding-bottom: 30px;
+  }
+
   header .nav-bar .buttons-c .h-bttn {
     text-decoration: none;
     color: white;
@@ -141,6 +148,7 @@
   }
 
   #body {
+    filter: blur(0);
     height: 626px;
     background-repeat: no-repeat;
     background-color: white;
@@ -249,7 +257,6 @@
     background-image: url(./images/projects1.png);
     background-size: 295px 220px;
     border-radius: 8px;
-    margin-top: 16px;
   }
 
   div.pro-1b {
