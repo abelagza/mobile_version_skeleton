@@ -54,7 +54,7 @@
     list-style: none;
     flex-direction: column;
     font-weight: 500;
-    opacity: 0.9;
+    opacity: 0.7;
     z-index: 1;
     overflow: hidden;
   }
@@ -79,16 +79,17 @@
   }
 
   .closing-bttn img {
-    height: 15px;
-    width: 15px;
+    height: 10px;
+    width: 10px;
     padding-bottom: 30px;
   }
 
   header .nav-bar .buttons-c .h-bttn {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     margin: 16px 0;
     font-size: 42px;
+    opacity: 100%;
   }
 
   header .nav-bar .button-b {
@@ -144,6 +145,11 @@
 
   #hamburger.show .burger-button:nth-child(3) {
     transform: rotate(-45deg);
+    transition: all 0.3s ease-in-out;
+  }
+
+  #body.show {
+    filter: blur(5px);
     transition: all 0.3s ease-in-out;
   }
 
@@ -226,7 +232,13 @@
     margin-right: 6px;
   }
 
+  #projects.show {
+    filter: blur(5px);
+    transition: all 0.3s ease-in-out;
+  }
+
   #projects {
+    filter: blur(0);
     display: grid;
     grid-template-columns: 12% 1fr 12%;
     row-gap: 88px;
@@ -433,7 +445,13 @@
     margin-top: 16px;
   }
 
+  #about.show {
+    filter: blur(5px);
+    transition: all 0.3s ease-in-out;
+  }
+
   #about {
+    filter: blur(0);
     height: 1125.15px;
     background-color: white;
     border-top-right-radius: 100px;
@@ -731,7 +749,13 @@
     width: 162px;
   }
 
+  #contact.show {
+    filter: blur(5px);
+    transition: all 0.3s ease-in-out;
+  }
+
   #contact {
+    filter: blur(0);
     height: 779px;
     background-color: var(--color-main);
     border-top-left-radius: 120px;
