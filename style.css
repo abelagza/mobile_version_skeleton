@@ -24,7 +24,7 @@
   }
 
   #logo {
-    filter: blur(0px);
+    filter: blur(0);
   }
 
   #logo.show {
