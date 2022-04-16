@@ -12,27 +12,29 @@
    <title>Mobile Version Skeleton</title>
 </head>
 <body>
- 
-   <header>
+   <header id="header">
        <nav class="nav-bar">
           
-           <div class="button-a">
+           <div class="button-a" id="logo">
                <div class="bttna">
                    <a href="#" class="my-logo">My Logo</a>
                </div>
            </div>
          
-           <div class="button-b">
-               <div class="burger-button"></div>
+           <div class="button-b" id="hamburger">
+               <span class="burger-button"></span>
+               <span class="burger-button"></span>
+               <span class="burger-button"></span>
            </div>
  
-           <div class="buttons-c">
-               <div class="bttnc">
-               <a href="#" class="bttn">Portfolio</a>
-               <a href="#" class="bttn">About</a>
-               <a href="#" class="bttn">Contact</a>
-               </div>
-           </div>
+           
+            <ul class="bttnc buttons-c" id="nav-ul">
+              <li class="h-bttn x-bttn"><a href="#header"><img src="./images/icons/close.png" alt="closing-bttn"></a></li>
+              <li><a href="#projects" class="h-bttn" >Portfolio</a></li>
+              <li><a href="#about" class="h-bttn">About</a></li>
+              <li><a href="#contact" class="h-bttn">Contact</a></li>
+            </ul>
+      
   
        </nav>
    </header>
@@ -350,6 +352,8 @@
  
    </form>
 </section>
+
+<script src="./features.js"></script>
  
 </body>
 </html>

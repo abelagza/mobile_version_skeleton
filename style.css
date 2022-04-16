@@ -23,6 +23,15 @@
     margin: 0%;
   }
 
+  #logo {
+    filter: blur(0);
+  }
+
+  #logo.show {
+    filter: blur(10px);
+    transition: all 0.3s ease-in-out;
+  }
+
   header .nav-bar {
     background-color: white;
     display: flex;
@@ -41,6 +50,57 @@
     font-size: 18px;
   }
 
+  .bttnc {
+    position: fixed;
+    right: -200%;
+    top: 0;
+    text-decoration: none;
+    background-color: var(--color-main);
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    transition: 0.3s;
+    list-style: none;
+    flex-direction: column;
+    font-weight: 500;
+    opacity: 0.8;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .bttnc.show {
+    right: 0%;
+    position: fixed;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .bttnc li {
+    padding: 30px 0 0 28px;
+  }
+
+  .bttnc .x-bttn {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 5px;
+    right: 40px;
+    padding: 0;
+  }
+
+  .closing-bttn img {
+    height: 10px;
+    width: 10px;
+    padding-bottom: 30px;
+  }
+
+  header .nav-bar .buttons-c .h-bttn {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 16px 0;
+    font-size: 42px;
+    opacity: 100%;
+  }
+
   header .nav-bar .button-b {
     position: relative;
     display: flex;
@@ -49,41 +109,61 @@
     width: 35px;
     height: 35px;
     cursor: pointer;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
-  header .nav-bar .buttons-c {
-    display: none;
-  }
-
-  header .nav-bar .button-b .burger-button {
+  .burger-button:nth-child(2) {
     width: 25px;
     height: 3px;
     background: var(--color-main);
     border-radius: 5px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(8px);
   }
 
-  .burger-button::before,
-  .burger-button::after {
+  .burger-button:nth-child(1) {
     content: '';
     position: absolute;
     width: 25px;
     height: 3px;
     border-radius: 5px;
     background: var(--color-main);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
-  .burger-button::before {
+  .burger-button:nth-child(3) {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+    background: var(--color-main);
+    transition: all 0.3s ease-in-out;
     transform: translateY(-8px);
   }
 
-  .burger-button::after {
-    transform: translateY(8px);
+  #hamburger.show .burger-button:nth-child(1) {
+    transform: rotate(45deg);
+    transition: all 0.3s ease-in-out;
+  }
+
+  #hamburger.show .burger-button:nth-child(2) {
+    display: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #hamburger.show .burger-button:nth-child(3) {
+    transform: rotate(-45deg);
+    transition: all 0.3s ease-in-out;
+  }
+
+  #body.show {
+    filter: blur(10px);
+    transition: all 0.3s ease-in-out;
   }
 
   #body {
+    filter: blur(0);
     height: 626px;
     background-repeat: no-repeat;
     background-color: white;
@@ -161,7 +241,13 @@
     margin-right: 6px;
   }
 
+  #projects.show {
+    filter: blur(10px);
+    transition: all 0.3s ease-in-out;
+  }
+
   #projects {
+    filter: blur(0);
     display: grid;
     grid-template-columns: 12% 1fr 12%;
     row-gap: 88px;
@@ -192,7 +278,6 @@
     background-image: url(./images/projects1.png);
     background-size: 295px 220px;
     border-radius: 8px;
-    margin-top: 16px;
   }
 
   div.pro-1b {
@@ -369,7 +454,13 @@
     margin-top: 16px;
   }
 
+  #about.show {
+    filter: blur(10px);
+    transition: all 0.3s ease-in-out;
+  }
+
   #about {
+    filter: blur(0);
     height: 1125.15px;
     background-color: white;
     border-top-right-radius: 100px;
@@ -667,7 +758,13 @@
     width: 162px;
   }
 
+  #contact.show {
+    filter: blur(10px);
+    transition: all 0.3s ease-in-out;
+  }
+
   #contact {
+    filter: blur(0);
     height: 779px;
     background-color: var(--color-main);
     border-top-left-radius: 120px;
@@ -859,10 +956,18 @@
     width: 50%;
     height: 10vh;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
+    list-style: none;
+    gap: 10px;
   }
 
-  .bttn:hover {
+  .h-bttn {
+    text-decoration: none;
+    color: var(--background-cards-text);
+  }
+
+  .h-bttn:hover {
     transition: all 0.5s ease-out;
     font-weight: 700;
     background-color: var(--color-tags-background);
@@ -1528,10 +1633,18 @@
     width: 50%;
     height: 10vh;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
+    list-style: none;
+    gap: 10px;
   }
 
-  .bttn:hover {
+  .h-bttn {
+    text-decoration: none;
+    color: var(--background-cards-text);
+  }
+
+  .h-bttn:hover {
     transition: all 0.5s ease-out;
     font-weight: 700;
     background-color: var(--color-tags-background);
