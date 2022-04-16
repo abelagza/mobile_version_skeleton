@@ -930,7 +930,7 @@
     background-color: white;
     position: fixed;
     z-index: 1;
-    filter: drop-shadow(0px 0px 16px rgba(64, 83, 252, 0.24));
+    filter: drop-shadow(0 0 16px rgba(64, 83, 252, 0.24));
     margin-top: -10vh;
   }
 
@@ -960,7 +960,6 @@
     display: flex;
     list-style: none;
     gap: 30px;
-
   }
 
   .h-bttn {
@@ -1083,13 +1082,25 @@
   }
 
   #projects .project-a:hover {
-    filter: drop-shadow(0px 48px 48px rgba(37, 47, 137, 0.08));
+    filter: drop-shadow(0 48px 48px rgba(37, 47, 137, 0.08));
     border: 1px solid var(--color-main);
     cursor: pointer;
   }
 
+  #projects .project-b {
+    width: 100%;
+    height: 65vh;
+    background-color: white;
+    border: 1px solid var(--cards-border);
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
   #projects .project-b:hover {
-    filter: drop-shadow(0px 48px 48px rgba(37, 47, 137, 0.08));
+    filter: drop-shadow(0 48px 48px rgba(37, 47, 137, 0.08));
     border: 1px solid var(--color-main);
     cursor: pointer;
   }
@@ -1239,20 +1250,7 @@
   .project-a .a2 {
     width: 50%;
     height: 100%;
-    padding: 48px 24px 0px 0px;
-  
-  }
-
-  #projects .project-b {
-    width: 100%;
-    height: 65vh;
-    background-color: white;
-    border: 1px solid var(--cards-border);
-    border-radius: 24px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row-reverse;
+    padding: 48px 24px 0 0;
   }
 
   .project-b .b1 {
@@ -1266,7 +1264,7 @@
   .project-b .b2 {
     width: 50%;
     height: 100%;
-    padding: 48px 0px 0px 24px;
+    padding: 48px 0 0 24px;
   }
 
   #about {
@@ -1590,22 +1588,6 @@
 }
 
 @media only screen
-  and (min-width: 769px)
-  and (max-width: 1007px) {
-  #projects .project-b {
-    width: 100%;
-    height: 60vh;
-    background-color: white;
-    border: 1px solid var(--cards-border);
-    border-radius: 24px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row-reverse;
-  }
-}
-
-@media only screen
   and (min-width: 480px)
   and (max-width: 768px) {
   * {
@@ -1626,38 +1608,38 @@
     width: 100%;
     height: 10vh;
     background-color: white;
+    position: fixed;
+    z-index: 1;
+    filter: drop-shadow(0 0 16px rgba(64, 83, 252, 0.24));
+    margin-top: -10vh;
   }
 
   .nav-bar {
     width: 100%;
-    height: 10vh;
+    height: 100%;
+    display: flex;
+  }
+
+  #logo {
+    width: 50%;
+    height: 100%;
     display: flex;
     align-items: center;
+    padding-left: 50px;
   }
 
-  .nav-bar .button-a {
+  #nav-ul {
     width: 50%;
-    height: 10vh;
-    float: left;
+    height: 100%;
     display: flex;
     align-items: center;
-  }
-
-  .nav-bar .bttna {
-    position: absolute;
-    left: 10.7%;
-    float: left;
-  }
-
-  .nav-bar .buttons-c {
-    float: right;
-    width: 50%;
-    height: 10vh;
-    display: flex;
     justify-content: flex-end;
-    align-items: center;
+  }
+
+  .bttnc {
+    display: flex;
     list-style: none;
-    gap: 10px;
+    gap: 3vw;
   }
 
   .h-bttn {
@@ -1693,6 +1675,7 @@
   }
 
   #body {
+    margin-top: 10vh;
     height: 90vh;
     width: 100%;
     background-color: white;
@@ -1710,8 +1693,8 @@
   }
 
   #body .title {
-    font-size: 3vw;
-    line-height: 4vw;
+    font-size: 5vw;
+    line-height: 7vw;
     color: var(--text-color-titles);
     margin-bottom: 1.4vh;
   }
@@ -1723,8 +1706,8 @@
   }
 
   #body .text {
-    font-size: 1.5vw;
-    line-height: 2vw;
+    font-size: 2.5vw;
+    line-height: 4vw;
     color: var(--background-cards-text);
     margin-bottom: 1.4vh;
   }
@@ -1954,6 +1937,18 @@
     flex-direction: column;
   }
 
+  #projects .project-a:hover {
+    filter: drop-shadow(0 48px 48px rgba(37, 47, 137, 0.08));
+    border: 1px solid var(--color-main);
+    cursor: pointer;
+  }
+
+  #projects .project-b:hover {
+    filter: drop-shadow(0 48px 48px rgba(37, 47, 137, 0.08));
+    border: 1px solid var(--color-main);
+    cursor: pointer;
+  }
+
   #about {
     width: 100%;
     height: 150.8vh;
@@ -2114,7 +2109,7 @@
   #contact {
     background-color: var(--color-main);
     width: 100%;
-    height: 92vh;
+    height: 100vh;
     border-top-left-radius: 180px 180px;
     margin-top: -28vh;
     display: flex;
