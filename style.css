@@ -1080,11 +1080,13 @@
   #projects .project-a:hover {
     filter: drop-shadow(0px 48px 48px rgba(37, 47, 137, 0.08));
     border: 1px solid var(--color-main);
+    cursor: pointer;
   }
 
   #projects .project-b:hover {
     filter: drop-shadow(0px 48px 48px rgba(37, 47, 137, 0.08));
     border: 1px solid var(--color-main);
+    cursor: pointer;
   }
 
   .pro-1 {
