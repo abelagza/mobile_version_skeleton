@@ -932,34 +932,31 @@
 
   .nav-bar {
     width: 100%;
-    height: 10vh;
+    height: 100%;
+    display: flex;
+  }
+
+  .button-a {
+    width: 50%;
+    height: 100%;
     display: flex;
     align-items: center;
+    padding-left: 143px;
   }
 
-  .nav-bar .button-a {
+  #nav-ul {
     width: 50%;
-    height: 10vh;
-    float: left;
+    height: 100%;
     display: flex;
     align-items: center;
-  }
-
-  .nav-bar .bttna {
-    position: absolute;
-    left: 10.7%;
-    float: left;
-  }
-
-  .nav-bar .buttons-c {
-    float: right;
-    width: 50%;
-    height: 10vh;
-    display: flex;
     justify-content: flex-end;
-    align-items: center;
+  }
+
+  .bttnc {
+    display: flex;
     list-style: none;
     gap: 10px;
+
   }
 
   .h-bttn {
@@ -1071,13 +1068,23 @@
 
   #projects .project-a {
     width: 100%;
-    height: 54vh;
+    height: 65vh;
     background-color: white;
     border: 1px solid var(--cards-border);
     border-radius: 24px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+
+  #projects .project-a:hover {
+    filter: drop-shadow(0px 48px 48px rgba(37, 47, 137, 0.08));
+    border: 1px solid var(--color-main);
+  }
+
+  #projects .project-b:hover {
+    filter: drop-shadow(0px 48px 48px rgba(37, 47, 137, 0.08));
+    border: 1px solid var(--color-main);
   }
 
   .pro-1 {
@@ -1187,47 +1194,51 @@
   }
 
   .project-a .a1 {
-    width: 47%;
-    height: 49vh;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .a1 .pro1a {
     background-image: url(./images/desktop/image1.png);
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     background-size: 100% 100%;
   }
 
   .a1 .pro3a {
     background-image: url(./images/desktop/image3.png);
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     background-size: 100% 100%;
   }
 
   .b1 .pro2a {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     background-size: 100% 100%;
     background-image: url(./images/desktop/image2.png);
   }
 
   .b1 .pro4a {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     background-size: 100% 100%;
     background-image: url(./images/desktop/image4.png);
   }
 
   .project-a .a2 {
-    width: 47%;
-    height: 49vh;
+    width: 50%;
+    height: 100%;
     padding: 24px;
+  
   }
 
   #projects .project-b {
     width: 100%;
-    height: 54vh;
+    height: 65vh;
     background-color: white;
     border: 1px solid var(--cards-border);
     border-radius: 24px;
@@ -1238,13 +1249,16 @@
   }
 
   .project-b .b1 {
-    width: 47%;
-    height: 49vh;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .project-b .b2 {
-    width: 47%;
-    height: 49vh;
+    width: 50%;
+    height: 100%;
     padding: 24px;
   }
 
@@ -1441,9 +1455,9 @@
   #contact {
     background-color: var(--color-main);
     width: 100%;
-    height: 92vh;
+    height: 100vh;
     border-top-left-radius: 180px 180px;
-    margin-top: -28vh;
+    margin-top: -15vh;
     display: flex;
     justify-content: center;
     align-items: center;
