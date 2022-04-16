@@ -1234,7 +1234,7 @@
   .project-a .a2 {
     width: 50%;
     height: 100%;
-    padding: 24px;
+    padding: 48px 24px 0px 0px;
   
   }
 
@@ -1261,7 +1261,7 @@
   .project-b .b2 {
     width: 50%;
     height: 100%;
-    padding: 24px;
+    padding: 48px 0px 0px 24px;
   }
 
   #about {
