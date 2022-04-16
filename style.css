@@ -2109,7 +2109,7 @@
   #contact {
     background-color: var(--color-main);
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     border-top-left-radius: 180px 180px;
     margin-top: -28vh;
     display: flex;
